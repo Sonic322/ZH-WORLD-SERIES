@@ -73,3 +73,12 @@
   menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+// Luicide icons
+  document.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide && typeof lucide.createIcons === 'function') {
+    lucide.createIcons();
+  } else {
+    console.error('Lucide не загружен');
+  }
+});
