@@ -65,3 +65,11 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   });
+
+  // NAV MOBILE
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });

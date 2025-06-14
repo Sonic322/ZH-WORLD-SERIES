@@ -7,26 +7,48 @@
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>   
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body class="text-gray-800 font-sans min-h-screen flex flex-col">
 
   <!-- Header -->
   <header class="shadow-md sticky top-0 z-50" style="background-color: #1f181f;">
-    <div class="flex items-center w-full">
-      <img src="ws2025.jpg" width="420" height="128" class="pl-4">
-      <nav class="space-x-14 text-lg font-semibold mx-auto text-gray-100">
-        <a href="index.html" class="hover:text-blue-500 transition-colors duration-200">MAIN INFO</a>
-        <a href="qualification.html" class="hover:text-blue-500 transition-colors duration-200">QUALIFICATION</a>
-        <a href="streambox.html" class="hover:text-blue-500 transition-colors duration-200">STREAM BOX</a>
-        <a href="bracket.html" class="hover:text-blue-500 transition-colors duration-200 text-blue-500 font-semibol">BRACKET</a>
-        <a href="sponsors.html" class="hover:text-blue-500 transition-colors duration-200">SPONSORS</a>
-        <a href="staff.html" class="hover:text-blue-500 transition-colors duration-200">STAFF</a>
-        <a href="hof.html" class="hover:text-blue-500 transition-colors duration-200">HALL OF FAME</a>
-      </nav>
-    </div>
-  </header>
+  <div class="flex items-center w-full px-4">
+    <img src="ws2025.jpg" width="420" height="128" alt="Logo" class="pl-4">
+
+    <!-- Gamburger menu for mobile -->
+    <button id="menu-toggle" class="pl-2 ml-auto block md:hidden text-gray-100 focus:outline-none" aria-label="Toggle menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Main menu (hidden on mobiles) -->
+    <nav id="menu" class="hidden md:flex space-x-12 text-lg font-semibold mx-auto text-gray-100">
+      <a href="index.html" class="hover:text-blue-500 transition-colors duration-200">MAIN INFO</a>
+      <a href="qualification.html" class="hover:text-blue-500 transition-colors duration-200">QUALIFICATION</a>
+      <a href="streambox.html" class="hover:text-blue-500 transition-colors duration-200">STREAM BOX</a>
+      <a href="bracket.html" class="hover:text-blue-500 transition-colors duration-200 text-blue-500 font-semibold">BRACKET</a>
+      <a href="sponsors.html" class="hover:text-blue-500 transition-colors duration-200">SPONSORS</a>
+      <a href="staff.html" class="hover:text-blue-500 transition-colors duration-200">STAFF</a>
+      <a href="hof.html" class="hover:text-blue-500 transition-colors duration-200">HALL OF FAME</a>
+    </nav>
+  </div>
+
+  <!-- Mobile version -->
+  <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
+    <a href="index.html" class="block text-gray-100 hover:text-blue-500">MAIN INFO</a>
+    <a href="qualification.html" class="block text-gray-100 hover:text-blue-500">QUALIFICATION</a>
+    <a href="streambox.html" class="block text-gray-100 hover:text-blue-500">STREAM BOX</a>
+    <a href="bracket.html" class="block text-blue-500 hover:text-blue-500 font-semibold">BRACKET</a>
+    <a href="sponsors.html" class="block text-gray-100 hover:text-blue-500">SPONSORS</a>
+    <a href="staff.html" class="block text-gray-100 hover:text-blue-500">STAFF</a>
+    <a href="hof.html" class="block text-gray-100 hover:text-blue-500">HALL OF FAME</a>
+  </nav>
+</header>
 
   <main class="flex-grow bg-neutral-900">
 
