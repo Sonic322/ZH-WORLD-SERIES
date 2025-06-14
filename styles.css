@@ -1,0 +1,59 @@
+  html, body {
+  height: 100%;
+  }
+
+  html {
+  overflow-y: scroll;
+}
+  
+  .odometer {
+    display: flex;
+    gap: 0.1em;
+    height: 1.2em;
+    overflow: hidden;
+    line-height: 1.2em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .digit-column {
+    position: relative;
+    width: 0.6em;
+    height: 1.2em;
+    overflow: hidden;
+  }
+
+  .digit-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .digit-strip span {
+    display: block;
+    height: 1.2em;
+    text-align: center;
+  }
+
+
+ ol.counter-list {
+    counter-reset: item;
+  }
+  ol.counter-list > li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 2.5rem; 
+  }
+  ol.counter-list > li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(231, 229, 229); /* Tailwind yellow-400 */
+    font-weight: 500;
+    font-size: 1.0rem;
+    width: 2rem;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

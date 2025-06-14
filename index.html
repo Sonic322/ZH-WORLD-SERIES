@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Series 2025</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+
+<body class="text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+<header class="shadow-md sticky top-0 z-50" style="background-color: #1f181f;">
+  <div class="flex items-center w-full">
+    <img src="ws2025.jpg" width="420" height="128" class="pl-4">
+    <nav class="space-x-14 text-lg font-semibold mx-auto text-gray-100">
+      <a href="index.html" class="hover:text-blue-500 transition-colors duration-200 text-blue-500 font-semibold">MAIN INFO</a>
+      <a href="qualification.html" class="hover:text-blue-500 transition-colors duration-200">QUALIFICATION</a>
+      <a href="streambox.html" class="hover:text-blue-500 transition-colors duration-200">STREAM BOX</a>
+      <a href="bracket.html" class="hover:text-blue-500 transition-colors duration-200">BRACKET</a>
+      <a href="sponsors.html" class="hover:text-blue-500 transition-colors duration-200">SPONSORS</a>
+      <a href="staff.html" class="hover:text-blue-500 transition-colors duration-200">STAFF</a>
+      <a href="hof.html" class="hover:text-blue-500 transition-colors duration-200">HALL OF FAME</a>
+    </nav>
+  </div>
+</header>
+
+<main class="flex-grow bg-neutral-900">
+<!-- Countdown Timer -->
+<section class="bg-black text-yellow-400 py-1">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-2xl mb-0">QUALIFICATION FOR THE WORLD SERIES 2025 STARTS IN:</h2>
+    <div id="countdown" class="flex justify-center gap-10 text-2xl md:text-4xl font-semibold">
+      <div class="flex flex-col items-center">
+        <div class="odometer" id="days"></div>
+        <span class="text-sm mt-1 text-gray-300">Days</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="odometer" id="hours"></div>
+        <span class="text-sm mt-1 text-gray-300">Hours</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="odometer" id="minutes"></div>
+        <span class="text-sm mt-1 text-gray-300">Minutes</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="odometer" id="seconds"></div>
+        <span class="text-sm mt-1 text-gray-300">Seconds</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">ABOUT</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+      <ul class="list-disc list-outside ml-5 space-y-1 text-gray-200 text-[17px] leading-relaxed font-medium">
+        <li>
+        <strong>World Series</strong> is the biggest and most important <strong>Generals Zero Hour</strong> event of the year.
+        </li>
+        <li>
+        This tournament brings together the strongest players from around the world.
+        </li>
+        <li>
+        The most exciting and high-level games from top professionals.
+        </li>
+        <li>
+        The largest prize pool.
+        </li>
+        <li>
+        High-quality streams from the best streamers. All matches will be streamed.
+        </li>
+        <li>
+        This is the event everyone has been waiting for. You may skip other tournaments, but this one is unmissable. The entire Generals Zero Hour community comes together here - Players, Organizers, Referees, Streamers, Viewers, and of course, Sponsors.
+        </li>
+        <li>
+        Each of us plays a significant role in the growth of our beloved game.
+        There's not much time left - very soon, we will find out the name of the best player in the world for 2025 year!
+        </li>
+        <li>
+        Qualification month starts in August.
+        </li>
+        <li>
+        Main event starts in September.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- Format -->
+<section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">FORMAT</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+      <ul class="list-disc list-outside ml-5 space-y-1 text-gray-200 text-[17px] leading-relaxed font-medium">
+        <li>
+          <span class="font-semibold text-yellow-300">64 players</span> – Single Elimination
+        </li>
+        <li>
+         Mode: 1v1, Start cash: $10000, SW Limit: NO
+        </li>
+        <li>
+          Games are <span class="font-semibold text-yellow-300">Random Reverse</span>, but both players can agree to matchups.  
+          If no agreement is possible, random reverse applies.  
+          <span class="text-red-400 font-semibold">Air vs any other USA than Air = Auto Veto</span>.  
+          Deciding mirrors when score is even. Any mirrors in the end will be reversed.
+        </li>
+        <li>
+          <span class="font-semibold text-yellow-300">Gentool v8.9</span> is mandatory. Upload mode must be on!
+        </li>
+        <li>
+          <span class="font-semibold">1/32:</span> Best of 9 – Decider: <span class="text-yellow-300">Laser mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Arctic Arena ZH v1</span>
+        </li>
+        <li>
+          <span class="font-semibold">1/16:</span> Best of 11 – Decider: <span class="text-yellow-300">Tox mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
+        </li>
+        <li>
+          <span class="font-semibold">1/8:</span> Best of 11 – Decider: <span class="text-yellow-300">Air mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Mountain Mayhem v2</span>
+        </li>
+        <li>
+          <span class="font-semibold">1/4:</span> Best of 13 – Decider: <span class="text-yellow-300">China mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Sakura Forest II ZH v1</span>
+        </li>
+        <li>
+          <span class="font-semibold">Semifinals:</span> Best of 13 – Decider: <span class="text-yellow-300">GLA mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Snowy Drought ZH v5</span>
+        </li>
+        <li>
+          <span class="font-semibold">3rd place:</span> Best of 15 – Decider: <span class="text-yellow-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
+        </li>
+        <li>
+          <span class="font-semibold">FINAL:</span> Best of 15 – Decider: <span class="text-yellow-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Maps -->
+  <section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">MAP POOL</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+      <ul class="list-disc list-outside ml-5 space-y-1 text-gray-200 text-[17px] leading-relaxed font-medium">
+        <li>
+          <span class="text-green-400">[RANK] AKAs Magic ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Alfies Haven ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Arctic Arena ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Black Hell ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Blue Hole ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Dammed Korhal ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Drallim Desert ZH v2</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] Imminent Victory ZH v2</span>
+        </li>
+        <li>
+          <span class="text-green-400">[RANK] TD NobugsCars ZH v1</span>
+        </li>
+        <hr class="bg-neutral-800 border-1 border-gray-700 shadow-xl py-2 !mt-3">
+        <button class="inline-flex items-center gap-2 bg-yellow-500 text-neutral-900 font-semibold px-4 py-2 rounded-lg shadow hover:bg-yellow-400 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+  </svg>
+  <a href="">Download Maps</a>
+</button>
+
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PARTICIPANTS -->
+  <section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">PARTICIPANTS</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+
+      <!-- Pot 1A -->
+      <h3 class="font-semibold text-xl text-yellow-400 mb-2">Pot: 1A</h3>
+      <ol class="list-decimal list-inside space-y-2 text-gray-200 text-[17px] leading-relaxed font-semibold">
+  <li class="flex items-center gap-2">
+    <span class="font-medium">1. Master</span>
+    <img src="flags/denmark.png" class="w-[28px]" />
+    <span class="text-orange-400">-BiG^SiZe^</span>
+    <img src="master_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - size1456]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">2. Master</span>
+    <img src="flags/litva.png" class="w-[28px]" />
+    <span class="text-orange-400">Fargo</span>
+    <img src="master_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - fargo6040]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">3. Master</span>
+    <img src="flags/egypt.png" class="w-[28px]" />
+    <span class="text-orange-400">Marakar</span>
+    <img src="master_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - marakar]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">4. Master</span>
+    <img src="flags/uk.png" class="w-[28px]" />
+    <span class="text-orange-400">ExCaL</span>
+    <img src="master_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - excal4730]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">5. Master</span>
+    <img src="flags/ukraine.png" class="w-[28px]" />
+    <span class="text-orange-400">TumStep</span>
+    <img src="master_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - tumstep]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">6. Winner BO1 Tournament</span>
+    <img src="flags/iran.png" class="w-[28px]" />
+    <span class="text-orange-400">Lift-TruCK</span>
+    <span class="text-purple-400">[Discord - lifttruck]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">7. ZHLADDER #3</span>
+    <img src="flags/usa.png" class="w-[28px]" />
+    <span class="text-orange-400">BoYcaH^</span>
+    <img src="expert_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - boycah]</span>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+  <img src="youtube-48.png" class="w-[28px]" alt="YouTube" /></a>
+  </li>
+
+  <li class="flex items-center gap-2">
+    <span class="font-medium">8. ZHLADDER #4</span>
+    <img src="flags/syria.png" class="w-[28px]" />
+    <span class="text-orange-400">RaginG_K^</span>
+    <span class="text-purple-400">[Discord - raginggk]</span>
+  </li>
+  <hr class="bg-neutral-800 border-1 border-gray-700 shadow-xl py-2 !mt-4">
+
+  <!-- Pot 1B -->
+  <h3 class="font-semibold text-xl text-yellow-400 mb-2">Pot: 1B</h3>
+  <li class="flex items-center gap-2">
+    <span class="font-medium">9. ZHLADDER #6</span>
+    <img src="flags/syria.png" class="w-[28px]" />
+    <span class="text-orange-400">MoJo_JoJo</span>
+    <span class="text-purple-400">[Discord - mojo_jojo9]</span>
+  </li>
+<li class="flex items-center gap-2">
+    <span class="font-medium">10. ZHLADDER #7</span>
+    <img src="flags/russia.png" class="w-[28px]" />
+    <span class="text-orange-400">Azest</span>
+    <span class="text-purple-400">[Discord - _azest_]</span>
+  </li>
+<li class="flex items-center gap-2">
+    <span class="font-medium">11. ZHLADDER #8</span>
+    <img src="flags/new_zealand.png" class="w-[28px]" />
+    <span class="text-orange-400">HerB</span>
+    <img src="expert_badge.png" class="relative top-[4px]" alt="expert badge" />
+    <span class="text-purple-400">[Discord - madherb_]</span>
+  </li>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Schedule -->
+  <section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">SHEDULE</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+      <ul class="list-disc list-outside ml-5 space-y-1 text-gray-200 text-[17px] leading-relaxed font-medium">
+        <li>
+          8 September: End of signups.
+        </li>
+        <li>
+          10 September: Live draw of the bracket
+        </li>
+        <li>
+          11 September: Prediction competition (no matches allowed before this deadline)
+        </li>
+        <li>
+          21 September: Deadline for Round 1
+        </li>
+        <li>
+          28 September: Deadline for Round 2
+        </li>
+        <li>
+          5 October: Deadline for Round 3
+        </li>
+        <li>
+          12 October: Deadline for the Quarterfinals
+        </li>
+        <li>
+          19 October: Deadline for the Semifinals
+        </li>
+        <li>
+          25 October: Deadline for the Grand Final and 3rd place match (please note: the match for 3rd place has to be scheduled before the final)
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Streaming Guidlines -->
+  <section id="rules" class="py-5 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-xl font-bold text-center text-yellow-400 mb-1 tracking-wide">STREAMING GUIDLINES</h2>
+    <div class="w-12 h-1 mx-auto bg-yellow-500 rounded-full mb-2"></div>
+
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
+      <ul class="list-disc list-outside ml-5 space-y-1 text-gray-200 text-[17px] leading-relaxed font-medium">
+        <li>
+          <p>Here are some basic guidelines for the World Series 2024. Every streamer has to set up a stream delay of at least 2 minutes up to a maximum of 5 minutes if the players request it before Stream start. You can do more but 2 minutes should be more than enough to avoid any kind of stream sniping accusations.</p>
+          <p>Players are encouraged to check the stream delay with the streamer before the set.</p>
+        </li>
+        <li>
+          It is not allowed to "reserve" several sets in advance. Feel free to message both players, ask them if you can stream and if it matches with their and your time post it into the WS topic and the following Stream Box. Every streamer can add his available timezones when "signing up" for GameReplays.org streams. You can of course stream as much games as you want in the earlier rounds. Replay casts are also very appreciated.
+          <p>For later rounds we as the WS Hosts will decide who can stream which set ( this will be based on connection, origin of the players, streaming efforts of streamers etc. ).</p>
+        </li>
+        <li>
+          If you provide good coverage early on you will most likely end up getting bigger sets in the World Series later. Someone who streams one single set and then asks for a quarterfinal will most likely not have any kind of luck.
+          <p>While you are streaming you are the referee if noone else is around. This means be familiar with the WS rules ( AUTO REMATCH when Air vs any other USA) and the maps and map names. If you use a wrong map and players don't complain directly the set has to be played further. In case you have any issues with the players or any major issue regarding accusations, discussions etc. DM one of the WS Hosts and we will try to help.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-4">
+    <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+      &copy; 2025 ZH WORLD SERIES.
+    </div>
+  </footer>
+
+
+</body>
+</html>
