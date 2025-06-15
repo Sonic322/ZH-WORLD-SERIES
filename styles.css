@@ -5,7 +5,7 @@
   html {
   overflow-y: scroll;
 }
-  
+
   .odometer {
     display: flex;
     gap: 0.1em;
