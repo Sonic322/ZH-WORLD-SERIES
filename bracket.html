@@ -7,18 +7,20 @@
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>   
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="script.js" defer></script>
 </head>
 
-<body class="tracking-wide text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="tracking-wide text-gray-800 font-sans min-h-screen flex flex-col" style="background-color: #1f181f;">
 
   <!-- Header -->
   <header class="shadow-md sticky top-0 z-50" style="background-color: #1f181f;">
-  <div class="flex items-center w-full px-4">
-    <img src="ws2025.jpg" width="420" height="128" alt="Logo" class="pl-4">
+  <div class="flex items-center w-full h-auto h-[128px] px-4">
+  <img src="ws2025.jpg" alt="Logo"
+       class="pl-4 sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
 
     <!-- Gamburger menu for mobile -->
-    <button id="menu-toggle" class="pl-2 ml-auto block md:hidden text-gray-100 focus:outline-none" aria-label="Toggle menu">
+    <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
         <line x1="3" y1="6" x2="21" y2="6"/>
         <line x1="3" y1="12" x2="21" y2="12"/>

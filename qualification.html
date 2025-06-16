@@ -7,19 +7,20 @@
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="script.js" defer></script>
 </head>
 
-
-<body class="tracking-wide text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="tracking-wide text-gray-800 font-sans min-h-screen flex flex-col" style="background-color: #1f181f;">
 
   <!-- Header -->
-<header class="shadow-md sticky top-0 z-50" style="background-color: #1f181f;">
-  <div class="flex items-center w-full px-4">
-    <img src="ws2025.jpg" width="420" height="128" alt="Logo" class="pl-4">
+  <header class="shadow-md sticky top-0 z-50" style="background-color: #1f181f;">
+  <div class="flex items-center w-full h-auto h-[128px] px-4">
+  <img src="ws2025.jpg" alt="Logo"
+       class="pl-4 sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
 
     <!-- Gamburger menu for mobile -->
-    <button id="menu-toggle" class="pl-2 ml-auto block md:hidden text-gray-100 focus:outline-none" aria-label="Toggle menu">
+    <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
       <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
         <line x1="3" y1="6" x2="21" y2="6"/>
         <line x1="3" y1="12" x2="21" y2="12"/>
@@ -86,8 +87,11 @@
 
     <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6">
       <ul class="list-disc list-outside ml-5 text-gray-200 text-[16px] leading-relaxed font-medium space-y-1">
-        <p class="mb-3">With not much time until the World Series begins with all its glory! We want to share details on how to qualify, and what it means. This is going to be the biggest Zero Hour tournament of all time!</p>
-        <p>We're going to have 4 pots, with a total of 64 players. Most qualification comes through ZHLADDER again this year and can be accessed here, but we're still looking for Revora players too!</p>
+        <p>With 6 months until the world series begins, we want to share details on how to qualify, and what it means.</p>
+        <p>This is going to be the biggest 1v1 10k tournament of the year.</p>
+        <p>We're going to have 4 pots, with a total of 64 players.</p>
+        <p>Most qualification comes through ZHLadder again this year and can be accessed <a href="https://discord.gg/5J9f6KWDqs" target="_blank" class="text-blue-400">Here</a>, but we're still looking for Revora players too!</p>
+
         <hr class="border-1 border-gray-700 shadow-xl !my-4">
         <h3 class="font-semibold text-orange-400">Qualification month for ZHLADDER and Revora will be from 1st August 2025 and run until August 31st 2025.</h3>
         <p>Excitingly, we will have 3 tournaments to get higher pot qualification:</p>
@@ -130,7 +134,7 @@
   <li>Expert #6</li>
   <li>Shatabrick #2</li>
   <li>Shatabrick #3</li>
-  <h3 class="font-semibold text-orange-400 mb-1 mt-6">Pot 3: 16 Players</h3>
+  <h3 class="font-semibold text-orange-400 mb-1 mt-6">Pot 4: 32 Players</h3>
   <li>ZHLADDER #15</li>
   <li>ZHLADDER #16</li>
   <li>ZHLADDER #17</li>
