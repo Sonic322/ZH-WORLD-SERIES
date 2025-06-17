@@ -724,10 +724,6 @@ video {
   width: 14rem;
 }
 
-.w-\[190px\] {
-  width: 190px;
-}
-
 .w-\[20px\] {
   width: 20px;
 }
@@ -766,6 +762,10 @@ video {
 
 .min-w-0 {
   min-width: 0px;
+}
+
+.min-w-\[190px\] {
+  min-width: 190px;
 }
 
 .max-w-3xl {
@@ -1267,6 +1267,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1584,6 +1588,10 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-\[3rem\] {
+    font-size: 3rem;
   }
 }
 
