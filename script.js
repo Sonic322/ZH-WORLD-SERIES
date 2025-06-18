@@ -113,8 +113,127 @@
   });
 }
 
+// Stream Search
+function filterStreamers(query) {
+  const items = document.querySelectorAll('#streamers .streamer');
+  const lowerQuery = query.toLowerCase();
+  items.forEach(item => {
+    const text = item.innerText.toLowerCase();
+    item.style.display = text.includes(lowerQuery) ? '' : 'none';
+  });
+}
 
 
+const API_KEY = 'AIzaSyAqLrnXgZ31rWgpgEESLXbtigo_D1T2lq0';
 
+const streamers = [
+  { name: 'DoMiNaToR', channelId: 'UCkoFrzmLq_bKtYi1aKHbhpQ', statusElementId: 'status-dominator', subsElementId: 'subs-dominator' },
+  { name: 'Legionnaire Generals', channelId: 'UCc_5y63oJbvvztMHqa_E2uA', statusElementId: 'status-legi', subsElementId: 'subs-legi' },
+  { name: 'Marakar', channelId: 'UCT156NmNhMPW0EXbkKvv7Mg', statusElementId: 'status-marakar', subsElementId: 'subs-marakar' },
+  { name: 'StaZzz', channelId: 'UCaqNK0xKxJZfAEep9mXPYiA', statusElementId: 'status-stazzz', subsElementId: 'subs-stazzz' },
+  { name: 'TumStep', channelId: 'UCEWH199TvGw8KGjYZkRJg8Q', statusElementId: 'status-tumstep', subsElementId: 'subs-tumstep' },
+  { name: 'ExCaL', channelId: 'UCXGWk49Q-BNeoWq1z0qaCnw', statusElementId: 'status-excal', subsElementId: 'subs-excal' },
+  { name: 'bl9rTV', channelId: 'UCDV2KudJNN9TXMax7yXZ1GA', statusElementId: 'status-bl9r', subsElementId: 'subs-bl9r' }
+];
 
+// Кэши
+const streamerStatusCache = {};   // { [channelId]: { isLive, lastCheck } }
+const subscribersCache = {};      // { [channelId]: { count, lastCheck } }
+
+// Проверка онлайн статуса с кешем 5 минут
+async function checkIfLive(channelId) {
+  const now = Date.now();
+  const cache = streamerStatusCache[channelId];
+
+  if (cache && now - cache.lastCheck < 5 * 60 * 1000) { // 5 минут кеш
+    return cache.isLive;
+  }
+
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&eventType=live&type=video&key=${API_KEY}`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    const isLive = data.items && data.items.length > 0;
+
+    streamerStatusCache[channelId] = { isLive, lastCheck: now };
+
+    return isLive;
+  } catch (err) {
+    console.error('Ошибка API (статус):', err);
+    return false;
+  }
+}
+
+// Получение подписчиков с кешем 1 час
+async function fetchSubscribersCount(channelId) {
+  const now = Date.now();
+  const cache = subscribersCache[channelId];
+
+  if (cache && now - cache.lastCheck < 60 * 60 * 1000) { // 1 час кеш
+    return cache.count;
+  }
+
+  const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${API_KEY}`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    if (data.items && data.items.length > 0) {
+      const count = Number(data.items[0].statistics.subscriberCount);
+      subscribersCache[channelId] = { count, lastCheck: now };
+      return count;
+    }
+    return null;
+  } catch (err) {
+    console.error('Ошибка API (подписчики):', err);
+    return null;
+  }
+}
+
+// Обновление статуса (online/offline)
+async function updateStreamerStatuses() {
+  for (const streamer of streamers) {
+    const isLive = await checkIfLive(streamer.channelId);
+
+    const statusEl = document.getElementById(streamer.statusElementId);
+    if (statusEl) {
+      statusEl.innerHTML = isLive
+        ? `<span class="inline-flex items-center gap-2 text-green-400">
+             <span class="relative flex h-2 w-2">
+               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+               <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+             </span>
+             В эфире
+           </span>`
+        : `<span class="inline-flex items-center gap-2 text-gray-400">
+             <span class="relative flex h-2 w-2">
+               <span class="relative inline-flex rounded-full h-2 w-2 bg-gray-500"></span>
+             </span>
+             Offline
+           </span>`;
+    }
+  }
+}
+
+// Обновление количества подписчиков
+async function updateSubscribersCounts() {
+  for (const streamer of streamers) {
+    const count = await fetchSubscribersCount(streamer.channelId);
+    const subsEl = document.getElementById(streamer.subsElementId);
+    if (subsEl) {
+      subsEl.textContent = count !== null
+        ? `${count.toLocaleString()} подписчиков`
+        : 'Subs: no data';
+    }
+  }
+}
+
+// Запуск и интервалы
+document.addEventListener("DOMContentLoaded", () => {
+  updateStreamerStatuses();
+  updateSubscribersCounts();
+
+  setInterval(updateStreamerStatuses, 5 * 60 * 1000);      // каждые 5 минут
+  setInterval(updateSubscribersCounts, 60 * 60 * 1000);   // каждый час
+});
 

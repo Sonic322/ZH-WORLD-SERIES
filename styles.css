@@ -6,6 +6,7 @@
   overflow-y: scroll;
 }
 
+
   .odometer {
     display: flex;
     gap: 0.1em;
@@ -63,44 +64,12 @@
   -webkit-text-stroke: 2px #000000;
   }
 
-  /*CARD GRADIENT */
-  .card-bg-boycah {
-  background-image: linear-gradient(to bottom right, #f80404, #2a2a2a, #f8040490);
-}
 
-.card-bg-logica {
-  background-image: linear-gradient(to bottom right, #fb04a5, #2a2a2a, #fb04a590);
-}
-
-.card-bg-crazy {
-  background-image: linear-gradient(to bottom right, #ea580c, #2a2a2a, #ea580c90);
-}
-
-.card-bg-sexiie {
-  background-image: linear-gradient(to bottom right, #aaff00, #2a2a2a, #77ff0090);
-}
-
-.card-bg-rage {
-  background-image: linear-gradient(to bottom right, #2bedfa, #2a2a2a, #2bedfa90);
-}
-
-.card-bg-excal {
-  background-image: linear-gradient(to bottom right, #7b00ff, #2a2a2a, #7b00ff90);
-}
-
-.card-bg-marakar {
-  background-image: linear-gradient(to bottom right, #00ff0d, #2a2a2a, #00ff0d90);
-}
-
-.card-bg-size {
-  background-image: linear-gradient(to bottom right, #465fff, #2a2a2a, #465fff90);
-}
-
-.card-bg-domi {
-  background-image: linear-gradient(to bottom right, #eeff00, #2a2a2a, #eeff0090);
-}
-
-.card-bg-karro {
-  background-image: linear-gradient(to bottom right, #ff1900, #2a2a2a, #ff190090);
+  /*-----subscribers-------*/
+  .subscribers {
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
