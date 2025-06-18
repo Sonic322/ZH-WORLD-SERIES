@@ -61,8 +61,12 @@
 
   .custom-stroke {
   color: #f9b703;
-  -webkit-text-stroke: 2px #000000;
-  }
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
 
 
   /*-----subscribers-------*/
