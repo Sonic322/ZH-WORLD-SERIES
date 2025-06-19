@@ -1600,6 +1600,14 @@ video {
   padding: 0.25rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2454,6 +2462,11 @@ video {
 
   .md\:text-\[2\.5rem\] {
     font-size: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-normal {
