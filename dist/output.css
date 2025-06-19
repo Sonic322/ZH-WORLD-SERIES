@@ -1777,6 +1777,14 @@ video {
   font-size: 0.85rem;
 }
 
+.text-\[1\.125rem\] {
+  font-size: 1.125rem;
+}
+
+.text-\[1\.25rem\] {
+  font-size: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
