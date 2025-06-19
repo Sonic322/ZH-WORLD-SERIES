@@ -1753,6 +1753,30 @@ video {
   font-size: 2.5rem;
 }
 
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[2\.75rem\] {
+  font-size: 2.75rem;
+}
+
+.text-\[2\.25rem\] {
+  font-size: 2.25rem;
+}
+
+.text-\[0\.5rem\] {
+  font-size: 0.5rem;
+}
+
+.text-\[0\.75rem\] {
+  font-size: 0.75rem;
+}
+
+.text-\[0\.85rem\] {
+  font-size: 0.85rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1928,6 +1952,18 @@ video {
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 
+.text-\[0\.8\] {
+  color: 0.8;
+}
+
+.text-\[0\.75\] {
+  color: 0.75;
+}
+
+.text-\[0\.5\] {
+  color: 0.5;
+}
+
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -2053,6 +2089,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -2116,6 +2158,18 @@ video {
   opacity: 1;
 }
 
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-\[0_10px_20px_rgba\(0\2c 0\2c 0\2c 0\.6\)\]:hover {
+  --tw-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  --tw-shadow-colored: 0 10px 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:shadow-red-500\/40:hover {
   --tw-shadow-color: rgb(239 68 68 / 0.4);
   --tw-shadow: var(--tw-shadow-colored);
@@ -2123,6 +2177,11 @@ video {
 
 .hover\:shadow-red-500\/30:hover {
   --tw-shadow-color: rgb(239 68 68 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-red-500\/80:hover {
+  --tw-shadow-color: rgb(239 68 68 / 0.8);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2258,6 +2317,14 @@ video {
 
   .md\:text-\[3\.0rem\] {
     font-size: 3.0rem;
+  }
+
+  .md\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+
+  .md\:font-normal {
+    font-weight: 400;
   }
 }
 
