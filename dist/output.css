@@ -876,6 +876,14 @@ video {
   min-width: 190px;
 }
 
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
+.min-w-\[60px\] {
+  min-width: 60px;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -1249,6 +1257,26 @@ video {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
+.border-amber-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(120 53 15 / var(--tw-border-opacity));
+}
+
+.border-neutral-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
+}
+
+.border-neutral-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 245 245 / var(--tw-border-opacity));
+}
+
+.border-neutral-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 163 163 / var(--tw-border-opacity));
+}
+
 .bg-\[\#1f181f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(31 24 31 / var(--tw-bg-opacity));
@@ -1382,6 +1410,21 @@ video {
 .bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1793,6 +1836,23 @@ video {
   font-size: 1.75rem;
 }
 
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
+}
+
+.text-\[2\.1rem\] {
+  font-size: 2.1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1978,6 +2038,11 @@ video {
 
 .text-\[0\.5\] {
   color: 0.5;
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-400::-moz-placeholder {
@@ -2243,8 +2308,16 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-\[0\.8rem\] {
@@ -2342,6 +2415,10 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 
   .md\:font-normal {
