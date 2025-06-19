@@ -222,7 +222,7 @@ async function updateSubscribersCounts() {
     const subsEl = document.getElementById(streamer.subsElementId);
     if (subsEl) {
       subsEl.textContent = count !== null
-        ? `${count.toLocaleString()} subscribers`
+        ? `${count.toLocaleString()} followers`
         : 'Subs: no data';
     }
   }
