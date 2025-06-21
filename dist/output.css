@@ -2005,6 +2005,10 @@ video {
   font-size: 0.575rem;
 }
 
+.text-\[\.875rem\] {
+  font-size: .875rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2661,6 +2665,10 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[0\.875rem\] {
+    font-size: 0.875rem;
   }
 }
 
