@@ -229,47 +229,154 @@
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">PARTICIPANTS</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-2 sm:p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.875rem] md:text-[1rem]">
   <div> <!-- ALL POTS -->
  <div class="mb-4">
-  <h2 class="text-xl text-orange-400 mb-2">Pot 1A</h2>
-  <ol class="space-y-2 text-orange-300">
+  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1A</h2>
+  <ol class="space-y-1 text-orange-300">
     <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">1.</span>
-    <img src="flags/denmark.png" class="w-[25px]" />
-    <span>-BiG^SiZe^</span>
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">1.</span>
+    <img src="flags/denmark.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">BiG^SiZe</span>
     <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
   </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>size1456</span>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span></span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>size1456</span>
+      </div>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+      </a>
     </div>
+  </div>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>size1456</span>
+  </div>
+  <div class="hidden sm:block">
     <a href="https://www.youtube.com/" target="_blank">
       <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
     </a>
   </div>
 </li>
 <!-- PLAYER END -->
+
 <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">2.</span>
-    <img src="flags/litva.png" class="w-[25px]" />
-    <span>Fargo</span>
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">2.</span>
+    <img src="flags/litva.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">Fargo</span>
     <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
   </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>fargo6040</span>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span></span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>fargo6040</span>
+      </div>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+      </a>
     </div>
+  </div>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>fargo6040</span>
+  </div>
+  <div class="hidden sm:block">
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+    </a>
+  </div>
+</li>
+<!-- PLAYER END -->
+
+<!-- PLAYER -->
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">3.</span>
+    <img src="flags/egypt.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">Marakar</span>
+    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
+  </div>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span></span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>marakar</span>
+      </div>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>marakar</span>
+  </div>
+  <div class="hidden sm:block">
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+    </a>
+  </div>
+</li>
+<!-- PLAYER END -->
+
+</ol>
+</div>
+
+
+<div class="mb-4">
+  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1B</h2>
+  <ol class="space-y-1 text-orange-300">
+  <!-- PLAYER -->
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">4.</span>
+    <img src="flags/iran.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">Lift-TruCK</span>
+  </div>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span>Winner BO1</span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>.lifttruck</span>
+      </div>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>.lifttruck</span>
+  </div>
+  <div class="hidden sm:block">
     <a href="https://www.youtube.com/" target="_blank">
       <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
     </a>
@@ -277,20 +384,30 @@
 </li>
 <!-- PLAYER END -->
  <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">3.</span>
-    <img src="flags/egypt.png" class="w-[25px]" />
-    <span>Marakar</span>
-    <img src="images/expert_badge.png" class="h-5 relative top-[1px]" />
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">5.</span>
+    <img src="flags/syria.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">MoJo_JoJo</span>
   </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>marakar</span>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span>ZHLADDER #6</span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>.mojo_jojo9</span>
+      </div>
     </div>
+  </div>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>.mojo_jojo9</span>
+  </div>
+  <div class="hidden sm:block">
     <a href="https://www.youtube.com/" target="_blank">
       <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
     </a>
@@ -300,96 +417,76 @@
 </ol>
 </div>
 
-
 <div class="mb-4">
-  <h2 class="text-xl text-orange-400 mb-2">Pot 1B</h2>
-  <ol class="space-y-2 text-orange-300">
+  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 2</h2>
+  <ol class="space-y-1 text-orange-300">
   <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">4.</span>
-    <img src="flags/iran.png" class="w-[25px]" />
-    <span>Lift-TruCK</span>
-    	<span class="text-gray-300">Winner BO1</span>
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <!-- Ник -->
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">6.</span>
+    <img src="flags/new_zealand.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">HerB</span>
+    <img src="images/expert_badge.png" class="h-5 relative top-[1px]" />
   </div>
 
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>lifttruck</span>
+  <!-- Статус -->
+  <div class="text-gray-300"></div>
+
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span>ZHLADDER #8</span>
+
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>madherb_</span>
+      </div>
     </div>
+  </div>
+
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>madherb_</span>
+  </div>
+  <div class="hidden sm:block">
     <a href="https://www.youtube.com/" target="_blank">
       <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
     </a>
   </div>
 </li>
 <!-- PLAYER END -->
+
  <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">5.</span>
-    <img src="flags/syria.png" class="w-[25px]" />
-    <span>MoJo_JoJo</span>
-    <span class="text-gray-300">ZHLADDER #6</span>
+  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+  <div class="flex items-center gap-3">
+    <span class="text-gray-400">6.</span>
+    <img src="flags/russia.png" class="w-[21px] sm:w-[25px]" />
+    <span class="text-orange-300">StaZzz</span>
   </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>mojo_jojo9</span>
+  <div class="text-gray-300"></div>
+  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+    <span>ZHLADDER #9</span>
+    <!-- Только на мобилке -->
+    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+      <div class="flex items-center gap-1">
+        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+        <span>.stazzz</span>
+      </div>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+      </a>
     </div>
-    <a href="" target="_blank">
-      <img src="" class="w-6" />
-    </a>
   </div>
-</li>
-<!-- PLAYER END -->
-</ol>
-
-</div>
-
-<div class="mb-4">
-  <h2 class="text-xl text-orange-400 mb-2">Pot 2</h2>
-  <ol class="space-y-2 text-orange-300">
-  <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">6.</span>
-    <img src="flags/new_zealand.png" class="w-[25px]" />
-    <span>HerB</span>
-    <img src="images/expert_badge.png" class="h-5 relative top-[1px]" />
-    <span class="text-gray-300">ZHLADDER #8</span>
+  <!-- Только на десктопе -->
+  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+    <span>.stazzz</span>
   </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>madherb_</span>
-    </div>
-    <a href="" target="_blank">
-      <img src="" class="w-6" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
- <!-- PLAYER -->
-  <li class="bg-[#323232] p-2 rounded flex justify-between items-center">
-  <div class="flex items-center gap-2">
-    <span class="text-gray-400 w-5 inline-block text-right">7.</span>
-    <img src="flags/russia.png" class="w-[25px]" />
-    <span>StaZzz</span>
-    <span class="text-gray-300">ZHLADDER #9</span>
-  </div>
-
-  <!-- SOCIAL -->
-  <div class="flex items-center gap-12">
-    <div class="flex items-center gap-1 text-gray-400">
-      <img src="images/discord-48.png" class="h-6" alt="Discord" />
-      <span>.stazzz</span>
-    </div>
+  <div class="hidden sm:block">
     <a href="https://www.youtube.com/" target="_blank">
       <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
     </a>
@@ -399,9 +496,8 @@
 </ol>
 </div>
 </div> <!-- ALL POTS -->
-      
+
       </div>
-      
     </div>
   </section>
 

@@ -145,7 +145,7 @@ async function checkIfLive(channelId) {
   const now = Date.now();
   const cache = streamerStatusCache[channelId];
 
-  if (cache && now - cache.lastCheck < 30 * 60 * 1000) { // 30 минут кеш
+  if (cache && now - cache.lastCheck < 60 * 60 * 1000) { // 60 минут кеш
     return cache.isLive;
   }
 
@@ -169,7 +169,7 @@ async function fetchSubscribersCount(channelId) {
   const now = Date.now();
   const cache = subscribersCache[channelId];
 
-  if (cache && now - cache.lastCheck < 1440 * 60 * 1000) { // 24 часа кеш
+  if (cache && now - cache.lastCheck < 2880 * 60 * 1000) { // 48 часов кеш
     return cache.count;
   }
 
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateStreamerStatuses();
   updateSubscribersCounts();
 
-  setInterval(updateStreamerStatuses, 30 * 60 * 1000);      // каждые 30 минут
-  setInterval(updateSubscribersCounts, 1440 * 60 * 1000);   // каждый 24 часа
+  setInterval(updateStreamerStatuses, 60 * 60 * 1000);      // каждые 60 минут
+  setInterval(updateSubscribersCounts, 2880 * 60 * 1000);   // каждые 48 часов
 });
 
