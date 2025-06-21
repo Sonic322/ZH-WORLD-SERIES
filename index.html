@@ -10,7 +10,7 @@
   <link href="dist/output.css" rel="stylesheet">
 </head>
 
-<body class="tracking-wide bg-gray-950 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="tracking-wide bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col bg-[url('/images/background.jpg')] bg-cover bg-center h-screen bg-fixed">
 
   <!-- Header -->
   <header class="shadow-md sticky top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
@@ -33,7 +33,7 @@
       <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200">QUALIFICATION</a>
       <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
       <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
-      <a href="streams.html" class="hover:text-orange-300 transition-colors duration-200">STREAMS</a>
+      <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
       <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
       <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
     </nav>
@@ -45,13 +45,14 @@
     <a href="qualification.html" class="block text-gray-100 hover:text-orange-300">QUALIFICATION</a>
     <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
     <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
-    <a href="streams.html" class="block text-gray-100 hover:text-orange-300">STREAMS</a>
+    <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
     <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
     <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
   </nav>
 </header>
 
-<main class="flex-grow bg-gray-950 max-w-[90rem] mx-auto w-full">
+<main class="flex-grow bg-gray-950 max-w-[90rem] mx-auto w-full text-gray-200 shadow-2xl shadow-emerald-600">
+
 <!-- Countdown Timer -->
 <section class="bg-gray-950 text-orange-400 py-1">
   <div class="max-w-3xl mx-auto px-4 text-center text-[1.48rem] md:text-[3rem]">
@@ -79,13 +80,21 @@
 
 
   <!-- About -->
-  <section class="py-5">
-  <div class="max-w-[85rem] mx-auto px-2">
+  <section class="py-5 max-w-[85rem] mx-auto px-2">
+  <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">ABOUT</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed tracking-wide">
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+      <!-- Логотип -->
+    <div class="flex justify-center mb-5">
+      <img src="images/logo-announcement.jpg" alt="Qualification Logo" class="max-h-216px w-auto rounded-lg object-contain" />
+    </div>
+    <p class="text-[1.5rem] font-semibold text-orange-300">Greetings, Generals...</p>
+    <p>We are very excited to announce that the <strong>World Series 2025</strong> is <strong>COMING SOON!</strong></p>
+    <p>This will take place in <strong>September 2025</strong>, with multiple qualification events throughout the year.</p>
+    <p>Qualification will be through the ZHLADDER and Revora.</p>
+      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed tracking-wide mt-4">
         <li>
         <strong>World Series</strong> is the biggest and most important <strong>Generals Zero Hour</strong> event of the year.
         </li>
@@ -120,12 +129,12 @@
 </section>
 
   <!-- Format -->
-<section class="py-5">
-  <div class="max-w-[85rem] mx-auto px-2">
+<section class="py-5 max-w-[85rem] mx-auto px-2">
+  <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">FORMAT</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
       <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
         <li>
           <span class="font-semibold text-orange-300">64 players</span> – Single Elimination
@@ -171,12 +180,12 @@
 
 
   <!-- Maps -->
-  <section class="py-5">
-  <div class="max-w-[85rem] mx-auto px-2">
+  <section class="py-5 max-w-[85rem] mx-auto px-2">
+  <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">MAP POOL</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
       <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
         <li>
           <span class="text-green-400">[RANK] AKAs Magic ZH v1</span>
@@ -224,8 +233,8 @@
 
 
   <!-- PARTICIPANTS -->
-  <section class="py-5">
-    <div class="max-w-[85rem] mx-auto px-2">
+  <section class="py-5 max-w-[85rem] mx-auto px-2">
+    <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">PARTICIPANTS</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
@@ -496,12 +505,12 @@
   </section>
 
   <!-- DEADLINES -->
-  <section class="py-5">
-  <div class="max-w-[85rem] mx-auto px-2">
+  <section class="py-5 max-w-[85rem] mx-auto px-2">
+  <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">DEADLINES</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.8rem] md:text-[1rem]">
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.8rem] md:text-[1rem]">
       <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
         <li>
           8 September: End of signups.
@@ -537,12 +546,12 @@
 
 
 <!-- Streaming Guidlines -->
-  <section class="py-5">
-  <div class="max-w-[85rem] mx-auto px-2">
+  <section class="py-5 max-w-[85rem] mx-auto px-2">
+  <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STREAMING GUIDLINES</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
       <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
         <li>
           <p>Here are some basic guidelines for the World Series 2024. Every streamer has to set up a stream delay of at least 2 minutes up to a maximum of 5 minutes if the players request it before Stream start. You can do more but 2 minutes should be more than enough to avoid any kind of stream sniping accusations.</p>
@@ -563,12 +572,12 @@
 
 
 <!-- STAFF -->
-    <section class="py-5">
-      <div class="max-w-[85rem] mx-auto px-2">
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STAFF</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
           <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
             <li><span class="text-blue-400">Host:</span> <span class="text-gray-100">jas</span></li>
             <li><span class="text-blue-400">Referees:</span> <span class="text-gray-100">jas, Phoenix, JoKeR, Piddox</span></li>

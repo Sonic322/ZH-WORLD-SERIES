@@ -10,7 +10,7 @@
   <link href="dist/output.css" rel="stylesheet">
 </head>
 
-<body class="tracking-wide bg-gray-950 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="tracking-wide bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col">
 
   <!-- Header -->
   <header class="shadow-md sticky top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
@@ -33,7 +33,7 @@
       <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200">QUALIFICATION</a>
       <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
       <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">BRACKET</a>
-      <a href="streams.html" class="hover:text-orange-300 transition-colors duration-200">STREAMS</a>
+      <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
       <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
       <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
     </nav>
@@ -45,13 +45,13 @@
     <a href="qualification.html" class="block text-gray-100 hover:text-orange-300">QUALIFICATION</a>
     <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
     <a href="bracket.html" class="block text-orange-400 hover:text-orange-300 font-semibold">BRACKET</a>
-    <a href="streams.html" class="block text-gray-100 hover:text-orange-300">STREAMS</a>
+    <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
     <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
     <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
   </nav>
 </header>
 
-  <main class="flex-grow bg-gray-950 mx-auto w-full">
+  <main class="flex-grow bg-gray-950 mx-auto w-full max-w-[150rem] shadow-2xl shadow-emerald-600">
     <!-- BRACKET HEADER -->
     <div class="max-w-[155rem] mx-auto px-2 p-5">
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">WS 2025 BRACKET</h2>
@@ -61,6 +61,206 @@
     <div class="flex justify-center items-center py-2 bg-gray-950">
       <img src="bracketws.png" alt="bracket" class="w-full max-w-10xl rounded-xl shadow-2xl border-2 border-yellow-700" />
     </div>
+
+    <!--PLAYED MATCHES -->
+<section class="py-5 max-w-[90rem] mx-auto px-2">
+  <div>
+      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">PLAYED MATCHES</h2>
+      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">2 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/jordan.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Mazen</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/kazakhstan.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Abuka</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">StaZzz</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">1 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/netherlands.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Sam</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/syria.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>RaginG_K</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">AlfieAce</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">2 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/ukraine.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Majesta</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/italy.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Makaveli</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">Legionnaire</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">2 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/armenia.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Ruiz</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/denmark.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>BiG^SiZe</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">xezon</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">1 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/germany.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>Antrip</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/russia.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>StaZzz</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">bl9rTV</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- MATCH CARD -->
+      <div class="bg-neutral-800 border border-gray-700 rounded-xl p-3 text-gray-200 space-y-2 shadow-md text-[18px] leading-relaxed">
+        <div class="text-gray-400 text-[0.8rem] sm:text-[0.9rem] lg:text-[1rem]">1 Round. 1/32</div>
+        <div class="relative flex items-center font-semibold px-2 text-[0.8rem] sm:text-[1rem] lg:text-[1.125rem]">
+          <!-- Score -->
+          <span class="absolute left-1/2 transform -translate-x-1/2 text-orange-400 font-bold whitespace-nowrap">0 - 5</span>
+          <!-- Left Side -->
+          <div class="flex items-center justify-end flex-1 min-w-0 gap-1 truncate mr-8">
+            <img src="flags/netherlands.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>NickName</span>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center justify-start flex-1 min-w-0 gap-1 truncate ml-8">
+            <img src="flags/uk.png" class="w-[20px] sm:w-[24px] lg:w-[26px] h-auto rounded-sm" />
+            <span>-DoMiNaToR-</span>
+          </div>
+        </div>
+        <div class="flex items-center space-x-1 !mt-2 text-[0.8rem] sm:text-[0.9rem] lg:text-[0.95rem]">
+          <img src="images/youtube-48.png" class="w-[22px] sm:w-[25px] lg:w-[28px]" alt="YouTube" />
+          <span class="text-gray-400">Stream:</span>
+          <a href="https://www.youtube.com/watch?v=uDOWOFVNFa0" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-600">ExCaL</a>
+        </div>
+        <div class="leading-tight flex items-center gap-1 text-[0.7rem] sm:text-[0.8rem] lg:text-[0.9rem]">
+          <a href="#" class="inline-flex items-center gap-0 bg-orange-400 text-gray-700 px-2 py-0.5 rounded-md shadow hover:bg-yellow-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            <span class="text-gray-700">Replays</span>
+          </a>
+        </div>
+      </div>
+      <!-- END CARD -->
 
   </main>
 

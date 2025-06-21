@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Series 2025</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+
+<body class="tracking-wide bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col bg-[url('/images/background.jpg')] bg-cover bg-center h-screen bg-fixed">
+
+  <!-- Header -->
+  <header class="shadow-md sticky top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
+  <div class="flex items-center w-full h-[128px] px-4">
+  <img src="ws2025.jpg" alt="Logo"
+       class="pl-4 sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
+
+    <!-- Gamburger menu for mobile -->
+    <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Main menu (hidden on mobiles) -->
+    <nav id="menu" class="hidden md:flex flex-wrap gap-x-2 gap-y-2 justify-center space-x-6 lg:space-x-12 text-[0.95rem] lg:text-lg font-semibold mx-auto text-gray-100 pl-4">
+      <a href="index.html" class="hover:text-orange-300 transition-colors duration-200">MAIN INFO</a>
+      <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200">QUALIFICATION</a>
+      <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
+      <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
+      <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">STREAMERS</a>
+      <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
+      <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
+    </nav>
+  </div>
+
+  <!-- Mobile version -->
+  <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
+    <a href="index.html" class="block text-gray-100 hover:text-orange-300">MAIN INFO</a>
+    <a href="qualification.html" class="block text-gray-100 hover:text-orange-300">QUALIFICATION</a>
+    <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
+    <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
+    <a href="streamers.html" class="block text-orange-400 hover:text-orange-300 font-semibold">STREAMERS</a>
+    <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
+    <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
+  </nav>
+</header>
+
+<main class="flex-grow bg-gray-950 w-full max-w-[150rem] mx-auto shadow-2xl shadow-emerald-600">
+
+
+<section class="py-12 px-6 max-w-[120rem] mx-auto bg-gray-950 text-white font-sans">
+  <h2 class="text-[1.75rem] md:text-3xl font-bold text-center mb-10">Generals Zero Hour: Streams</h2>
+
+  <!-- Поиск стримеров -->
+  <div class="mb-8 max-w-md mx-auto">
+    <input
+      type="text"
+      placeholder="Поиск стримера..."
+      class="w-full px-5 py-3 rounded-full bg-gray-800 text-white placeholder-gray-400 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600"
+      oninput="filterStreamers(this.value)"
+    />
+  </div>
+
+  <div id="streamers" class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <!-- Стример 1 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-dominator" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div>  
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_domi.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">DoMiNaToR</h3>
+        <p class="text-gray-400 text-sm mt-2">1v1, обзоры реплеев, топовые турниры.</p>
+        <a href="https://www.youtube.com/@DoMiNaToR3" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-dominator">
+          <span class="text-gray-400"> Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 2 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-legi" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_legi.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">Legionnaire Generals</h3>
+        <p class="text-gray-400 text-sm mt-2">Стримы каждый день, Zero Hour FFA action!</p>
+        <a href="https://www.youtube.com/@LegionnaireGenerals" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-legi">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 3 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-marakar" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_marakar.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">Marakar</h3>
+        <p class="text-gray-400 text-sm mt-2">Топовый игрок мира. ZH Master.</p>
+        <a href="https://www.youtube.com/@Marakar" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-marakar">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 4 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-stazzz" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_stazzz.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">StaZzz</h3>
+        <p class="text-gray-400 text-sm mt-2">Топовый игрок СНГ. Zero Hour Towers.</p>
+        <a href="https://www.youtube.com/@StaZzz" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-stazzz">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 5 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-tumstep" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_tumstep.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">TumStep</h3>
+        <p class="text-gray-400 text-sm mt-2">Почти чемпион мира. Zero Hour Gameplay.</p>
+        <a href="https://www.youtube.com/@TumStep256" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-tumstep">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 6 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-excal" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_excal.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">ExCaL</h3>
+        <p class="text-gray-400 text-sm mt-2">Global Elite. Zero Hour Legend.</p>
+        <a href="https://www.youtube.com/@excal2600" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-excal">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стример 7 -->
+    <div class="streamer bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-red-500/40 transition relative">
+      <!-- Добавлен класс relative для позиционирования -->
+      
+      <!-- Блок с подписчиками -->
+      <div id="subs-bl9r" class="subscribers absolute top-4 right-4 bg-gray-800 bg-opacity-50 px-3 py-1 rounded-full text-xs font-semibold text-yellow-300 select-none">
+        Loading...
+      </div> 
+      <div class="flex flex-col items-center text-center">
+        <img src="ava/youtube_bl9rtv.jpg" alt="Avatar" class="w-20 h-20 rounded-full mb-4 border-2 border-red-600">
+        <h3 class="text-xl font-semibold">bl9rTV</h3>
+        <p class="text-gray-400 text-sm mt-2">Казик каждый день.</p>
+        <a href="https://www.youtube.com/@bl9rTVRTS" target="_blank" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full hover:bg-red-700 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm12-3c0-1.1-.9-2-2-2H4a2 2 0 00-2 2v0a2 2 0 002 2h16a2 2 0 002-2z"/></svg>
+          Смотреть на YouTube
+        </a>
+        <div class="mt-3 text-sm" id="status-bl9r">
+          <span class="text-gray-400">Checking status...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</main>
+
+  <!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 py-4" style="background-color: #1f181f;">
+  <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+    <div class="mb-2 px-8">
+      &copy; 2025 ZH WORLD SERIES.
+    </div>
+
+    <div class="flex items-center justify-center gap-12">
+      <!-- CONTACT -->
+      <div class="flex items-center text-gray-300">
+        <img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
+        sonic066
+      </div>
+
+      <!-- DONATE BUTTON -->
+      <button onclick="toggleDonate()" class="py-0 rounded-md shadow-sm hover:text-green-500 inline-flex items-center transition-colors duration-300 text-gray-200">
+        <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
+        Donate
+      </button>
+    </div>
+  </div>
+
+  <!-- DONATE MODAL -->
+  <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-gray-900 p-6 rounded-lg text-white w-[90%] max-w-sm text-center shadow-xl">
+      <h2 class="text-xl font-semibold mb-4">Support in USDT (TRC-20)</h2>
+      <p class="text-gray-300 mb-2">Send to this wallet:</p>
+      <div class="bg-gray-800 text-green-400 font-mono text-[0.9rem] p-3 rounded mb-3 break-all" id="walletAddress">
+        TApfuj5hJDjjFqt1MXV6A7JGzoG2gwyw4K
+      </div>
+      <div class="copy-wrapper">
+        <button id="copyBtn" onclick="copyAddress()" class="bg-green-500 text-black px-2 py-1 rounded hover:bg-green-400 text-[0.9rem] inline-flex items-center">
+        Copy Address
+        </button>
+      </div>
+
+
+      <br>
+      <button onclick="toggleDonate()" class="text-sm text-gray-400 hover:text-white mt-2">Close</button>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
