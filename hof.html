@@ -14,9 +14,8 @@
 
   <!-- Header -->
   <header class="shadow-md top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
-  <div class="flex items-center w-full h-[128px] px-4">
-  <img src="ws2025.jpg" alt="Logo"
-       class="pl-4 sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
+  <div class="flex items-center w-full h-[128px]">
+  <img src="ws2025.jpg" alt="Logo" class="sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
 
     <!-- Gamburger menu for mobile -->
     <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
@@ -191,24 +190,27 @@
   <!-- Footer -->
 <footer class="bg-gray-800 text-gray-300 py-4" style="background-color: #1f181f;">
   <div class="max-w-4xl mx-auto px-4 text-center text-sm">
-    <div class="mb-2 px-8">
-      &copy; 2025 ZH WORLD SERIES.
+  <div class="mb-2 px-8 text-gray-300">
+    &copy; 2025 ZH WORLD SERIES.
+  </div>
+
+  <div class="flex items-center justify-center gap-12">
+    <!-- CONTACT -->
+    <div class="flex items-center text-gray-300">
+      Contact:&nbsp;<img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
+      sonic066
     </div>
 
-    <div class="flex items-center justify-center gap-12">
-      <!-- CONTACT -->
-      <div class="flex items-center text-gray-300">
-        <img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
-        sonic066
-      </div>
-
-      <!-- DONATE BUTTON -->
-      <button onclick="toggleDonate()" class="py-0 rounded-md shadow-sm hover:text-green-500 inline-flex items-center transition-colors duration-300 text-gray-200">
+    <!-- SUPPORT + DONATE -->
+    <div class="flex items-center text-gray-300">
+      Support:&nbsp;
+      <button onclick="toggleDonate()" class="flex items-center text-gray-200 hover:text-green-500 transition-colors duration-300">
         <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
         Donate
       </button>
     </div>
   </div>
+</div>
 
   <!-- DONATE MODAL -->
   <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -230,6 +232,15 @@
     </div>
   </div>
 </footer>
+
+<button id="scrollToTopBtn" title="Back to top"
+  class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-opacity duration-300 hidden shadow-lg">
+  <!-- стрелка вверх -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
 
 </body>
 </html>

@@ -237,3 +237,18 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(updateSubscribersCounts, 2880 * 60 * 1000);   // каждые 48 часов
 });
 
+const scrollBtn = document.getElementById("scrollToTopBtn");
+
+  // Показывать кнопку при прокрутке вниз
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.remove("hidden");
+    } else {
+      scrollBtn.classList.add("hidden");
+    }
+  });
+
+  // Скролл наверх при нажатии
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });

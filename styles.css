@@ -7,6 +7,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   /position: relative; /* чтобы z-index работал, если нужно */
   /background-image: url('images/background.jpg');
   /background-size: cover;
