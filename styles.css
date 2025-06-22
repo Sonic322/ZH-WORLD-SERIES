@@ -6,28 +6,28 @@
   overflow-y: scroll;
 }
 
-/* Preload background image */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('images/background.jpg') no-repeat center center/cover;
-  z-index: -50;
-  opacity: 0;
-  pointer-events: none;
-  background-color: #1f181f;
-}
-
-
 body {
+  position: relative; /* чтобы z-index работал, если нужно */
   background-image: url('images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  z-index: -50;
+  background-color: #1f181f;
+  /* z-index: не нужен */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('images/background.jpg') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
   background-color: #1f181f;
 }
+
 
 
   .odometer {
