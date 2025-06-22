@@ -14,569 +14,560 @@
 
   <!-- Header -->
   <header class="shadow-md top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
-  <div class="flex items-center w-full h-[128px]">
-  <img src="ws2025.jpg" alt="Logo" class="sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
+    <div class="flex items-center w-full h-[128px]">
+      <img src="ws2025.jpg" alt="Logo" class="sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
 
-    <!-- Gamburger menu for mobile -->
-    <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
+      <!-- Gamburger menu for mobile -->
+      <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
 
-    <!-- Main menu (hidden on mobiles) -->
-    <nav id="menu" class="hidden md:flex flex-wrap gap-x-2 gap-y-2 justify-center space-x-6 lg:space-x-12 text-[0.95rem] lg:text-lg font-semibold mx-auto text-gray-100 pl-4">
-      <a href="index.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">MAIN INFO</a>
-      <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200">QUALIFICATION</a>
-      <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
-      <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
-      <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
-      <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
-      <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
+      <!-- Main menu (hidden on mobiles) -->
+      <nav id="menu" class="hidden md:flex flex-wrap gap-x-2 gap-y-2 justify-center space-x-6 lg:space-x-12 text-[0.95rem] lg:text-lg font-semibold mx-auto text-gray-100 pl-4">
+        <a href="index.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">MAIN INFO</a>
+        <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200">QUALIFICATION</a>
+        <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
+        <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
+        <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
+        <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
+        <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
+      </nav>
+    </div>
+
+    <!-- Mobile version -->
+    <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
+      <a href="index.html" class="block text-orange-400 hover:text-orange-300 font-semibold">MAIN INFO</a>
+      <a href="qualification.html" class="block text-gray-100 hover:text-orange-300">QUALIFICATION</a>
+      <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
+      <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
+      <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
+      <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
+      <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
     </nav>
-  </div>
+  </header>
 
-  <!-- Mobile version -->
-  <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
-    <a href="index.html" class="block text-orange-400 hover:text-orange-300 font-semibold">MAIN INFO</a>
-    <a href="qualification.html" class="block text-gray-100 hover:text-orange-300">QUALIFICATION</a>
-    <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
-    <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
-    <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
-    <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
-    <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
-  </nav>
-</header>
+  <main class="flex-grow bg-gray-950 max-w-[90rem] mx-auto w-full text-gray-200 shadow-2xl shadow-emerald-600">
 
-
-
-<main class="flex-grow bg-gray-950 max-w-[90rem] mx-auto w-full text-gray-200 shadow-2xl shadow-emerald-600">
-
-<!-- Countdown Timer -->
-<section class="bg-gray-950 text-orange-400 py-1">
-  <div class="max-w-3xl mx-auto px-4 text-center text-[1.48rem] md:text-[3rem]">
-    <h2 class="md:text-2xl mb-0">QUALIFICATION FOR THE WORLD SERIES 2025 STARTS IN:</h2>
-    <div id="countdown" class="flex justify-center gap-10 md:text-4xl font-semibold">
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="days"></div>
-        <span class="text-sm mt-1 text-gray-300">Days</span>
+    <!-- Countdown Timer -->
+    <section class="bg-gray-950 text-orange-400 py-1">
+      <div class="max-w-3xl mx-auto px-4 text-center text-[1.48rem] md:text-[3rem]">
+        <h2 class="md:text-2xl mb-0">QUALIFICATION FOR THE WORLD SERIES 2025 STARTS IN:</h2>
+        <div id="countdown" class="flex justify-center gap-10 md:text-4xl font-semibold">
+          <div class="flex flex-col items-center">
+            <div class="odometer" id="days"></div>
+            <span class="text-sm mt-1 text-gray-300">Days</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="odometer" id="hours"></div>
+            <span class="text-sm mt-1 text-gray-300">Hours</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="odometer" id="minutes"></div>
+            <span class="text-sm mt-1 text-gray-300">Minutes</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="odometer" id="seconds"></div>
+            <span class="text-sm mt-1 text-gray-300">Seconds</span>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="hours"></div>
-        <span class="text-sm mt-1 text-gray-300">Hours</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="minutes"></div>
-        <span class="text-sm mt-1 text-gray-300">Minutes</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="seconds"></div>
-        <span class="text-sm mt-1 text-gray-300">Seconds</span>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-  <!-- About -->
-  <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">ABOUT</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <!-- Логотип -->
-    <div class="flex justify-center mb-5">
-      <img src="images/logo-announcement.jpg" alt="Logo" class="max-h-[216px] md:h-[216px] w-auto rounded-lg" />
-    </div>
-    <p class="text-[1.5rem] font-semibold text-orange-300">Greetings, Generals...</p>
-    <p>We are very excited to announce that the <strong>World Series 2025</strong> is <strong>COMING SOON!</strong></p>
-    <p>This will take place in <strong>September 2025</strong>, with multiple qualification events throughout the year.</p>
-    <p>Qualification will be through the ZHLADDER and Revora.</p>
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed tracking-wide mt-4">
-        <li>
-        <strong>World Series</strong> is the biggest and most important <strong>Generals Zero Hour</strong> event of the year.
-        </li>
-        <li>
-        This tournament brings together the strongest players from around the world.
-        </li>
-        <li>
-        The most exciting and high-level games from top professionals.
-        </li>
-        <li>
-        The largest prize pool.
-        </li>
-        <li>
-        High-quality streams from the best streamers. All matches will be streamed.
-        </li>
-        <li>
-        This is the event everyone has been waiting for. You may skip other tournaments, but this one is unmissable. The entire Generals Zero Hour community comes together here - Players, Organizers, Referees, Streamers, Viewers, and of course, Sponsors.
-        </li>
-        <li>
-        Each of us plays a significant role in the growth of our beloved game.
-        There's not much time left - very soon, we will find out the name of the best player in the world for 2025 year!
-        </li>
-        <li class="text-orange-300">
-        Qualification month starts in August.
-        </li>
-        <li class="text-orange-300">
-        Main event starts in September.
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-  <!-- Format -->
-<section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">FORMAT</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
-        <li>
-          <span class="font-semibold text-orange-300">64 players</span> – Single Elimination
-        </li>
-        <li>
-         Mode: 1v1, Start cash: $10000, SW Limit: NO
-        </li>
-        <li>
-          Games are <span class="font-semibold text-orange-300">Random Reverse</span>, but both players can agree to matchups.  
-          If no agreement is possible, random reverse applies.  
-          <span class="text-red-400 font-semibold">Air vs any other USA than Air = Auto Veto</span>.  
-          Deciding mirrors when score is even. Any mirrors in the end will be reversed.
-        </li>
-        <li>
-          <span class="font-semibold text-orange-300">Gentool v8.9</span> is mandatory. Upload mode must be on!
-        </li>
-        <li>
-          <span class="font-semibold">1/32:</span> Best of 9 – Decider: <span class="text-orange-300">Laser mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Arctic Arena ZH v1</span>
-        </li>
-        <li>
-          <span class="font-semibold">1/16:</span> Best of 11 – Decider: <span class="text-orange-300">Tox mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
-        </li>
-        <li>
-          <span class="font-semibold">1/8:</span> Best of 11 – Decider: <span class="text-orange-300">Air mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Mountain Mayhem v2</span>
-        </li>
-        <li>
-          <span class="font-semibold">1/4:</span> Best of 13 – Decider: <span class="text-orange-300">China mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Sakura Forest II ZH v1</span>
-        </li>
-        <li>
-          <span class="font-semibold">Semifinals:</span> Best of 13 – Decider: <span class="text-orange-300">GLA mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Snowy Drought ZH v5</span>
-        </li>
-        <li>
-          <span class="font-semibold">3rd place:</span> Best of 15 – Decider: <span class="text-orange-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
-        </li>
-        <li>
-          <span class="font-semibold">FINAL:</span> Best of 15 – Decider: <span class="text-orange-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Maps -->
-  <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">MAP POOL</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
-        <li>
-          <span class="text-green-400">[RANK] AKAs Magic ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Alfies Haven ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Arctic Arena ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Black Hell ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Blue Hole ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Dammed Korhal ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Drallim Desert ZH v2</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] Imminent Victory ZH v2</span>
-        </li>
-        <li>
-          <span class="text-green-400">[RANK] TD NobugsCars ZH v1</span>
-        </li>
-        <hr class="border-1 border-gray-700 shadow-xl !my-4">
-        <button class="inline-flex items-center gap-2 bg-orange-400 text-neutral-800 tracking-wide px-3 py-1 rounded-lg shadow hover:bg-orange-300 transition">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
-  </svg>
-  <a href="">Download Maps</a>
-</button>
-
-
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-  <!-- PARTICIPANTS -->
-  <section class="py-5 max-w-[85rem] mx-auto px-2">
-    <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">PARTICIPANTS</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-2 sm:p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.95rem] md:text-[1rem]">
-  <div> <!-- ALL POTS -->
- <div class="mb-4">
-  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1A</h2>
-  <ol class="space-y-1 text-orange-300">
-    <!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">1.</span>
-    <img src="flags/denmark.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">BiG^SiZe</span>
-    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span></span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>size1456</span>
-      </div>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
-      </a>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>size1456</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
-      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
-
-<!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">2.</span>
-    <img src="flags/litva.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">Fargo</span>
-    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span></span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>fargo6040</span>
-      </div>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
-      </a>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>fargo6040</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
-      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
-
-<!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">3.</span>
-    <img src="flags/egypt.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">Marakar</span>
-    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span></span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>marakar</span>
-      </div>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
-      </a>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>marakar</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
-      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
-
-</ol>
-</div>
-
-
-<div class="mb-4">
-  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1B</h2>
-  <ol class="space-y-1 text-orange-300">
-  <!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">4.</span>
-    <img src="flags/iran.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">Lift-TruCK</span>
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span class="text-[0.85rem] sm:text-[0.875rem]">Winner BO1</span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>.lifttruck</span>
-      </div>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
-      </a>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>.lifttruck</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
-      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
- <!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">5.</span>
-    <img src="flags/syria.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">MoJo_JoJo</span>
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #6</span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>.mojo_jojo9</span>
-      </div>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>.mojo_jojo9</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-  </div>
-</li>
-<!-- PLAYER END -->
-</ol>
-</div>
-
-<div class="mb-4">
-  <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 2</h2>
-  <ol class="space-y-1 text-orange-300">
-  <!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <!-- Ник -->
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">6.</span>
-    <img src="flags/new_zealand.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">HerB</span>
-    <img src="images/expert_badge.png" class="h-5 relative top-[1px]" />
-  </div>
-
-  <!-- Статус -->
-  <div class="text-gray-300"></div>
-
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #8</span>
-
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>madherb_</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>madherb_</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-  </div>
-</li>
-<!-- PLAYER END -->
-
- <!-- PLAYER -->
-  <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
-  <div class="flex items-center gap-3">
-    <span class="text-gray-400">7.</span>
-    <img src="flags/russia.png" class="w-[21px] sm:w-[25px]" />
-    <span class="text-orange-300">StaZzz</span>
-  </div>
-  <div class="text-gray-300"></div>
-  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
-  <div class="flex justify-between items-center w-full sm:block text-gray-300">
-    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #9</span>
-    <!-- Только на мобилке -->
-    <div class="flex items-center gap-3 sm:hidden text-gray-400">
-      <div class="flex items-center gap-1">
-        <img src="images/discord-48.png" class="h-5" alt="Discord" />
-        <span>.stazzz</span>
-      </div>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
-      </a>
-    </div>
-  </div>
-  <!-- Только на десктопе -->
-  <div class="hidden sm:flex items-center gap-1 text-gray-400">
-    <img src="images/discord-48.png" class="h-5" alt="Discord" />
-    <span>.stazzz</span>
-  </div>
-  <div class="hidden sm:flex items-center">
-    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
-      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
-    </a>
-  </div>
-</li>
-<!-- PLAYER END -->
-</ol>
-</div>
-</div> <!-- ALL POTS -->
-
-      </div>
-    </div>
-  </section>
-
-  <!-- DEADLINES -->
-  <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">DEADLINES</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.8rem] md:text-[1rem]">
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
-        <li>
-          8 September: End of signups.
-        </li>
-        <li>
-          10 September: Live draw of the bracket
-        </li>
-        <li>
-          11 September: Prediction competition (no matches allowed before this deadline)
-        </li>
-        <li>
-          21 September: Deadline for Round 1
-        </li>
-        <li>
-          28 September: Deadline for Round 2
-        </li>
-        <li>
-          5 October: Deadline for Round 3
-        </li>
-        <li>
-          12 October: Deadline for the Quarterfinals
-        </li>
-        <li>
-          19 October: Deadline for the Semifinals
-        </li>
-        <li>
-          25 October: Deadline for the Grand Final and 3rd place match (please note: the match for 3rd place has to be scheduled before the final)
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- Streaming Guidlines -->
-  <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STREAMING GUIDLINES</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
-
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
-        <li>
-          <p>Here are some basic guidelines for the World Series 2024. Every streamer has to set up a stream delay of at least 2 minutes up to a maximum of 5 minutes if the players request it before Stream start. You can do more but 2 minutes should be more than enough to avoid any kind of stream sniping accusations.</p>
-          <p>Players are encouraged to check the stream delay with the streamer before the set.</p>
-        </li>
-        <li>
-          It is not allowed to "reserve" several sets in advance. Feel free to message both players, ask them if you can stream and if it matches with their and your time post it into the WS topic and the following Stream Box. Every streamer can add his available timezones when "signing up" for GameReplays.org streams. You can of course stream as much games as you want in the earlier rounds. Replay casts are also very appreciated.
-          <p>For later rounds we as the WS Hosts will decide who can stream which set ( this will be based on connection, origin of the players, streaming efforts of streamers etc. ).</p>
-        </li>
-        <li>
-          If you provide good coverage early on you will most likely end up getting bigger sets in the World Series later. Someone who streams one single set and then asks for a quarterfinal will most likely not have any kind of luck.
-          <p>While you are streaming you are the referee if noone else is around. This means be familiar with the WS rules ( AUTO REMATCH when Air vs any other USA) and the maps and map names. If you use a wrong map and players don't complain directly the set has to be played further. In case you have any issues with the players or any major issue regarding accusations, discussions etc. DM one of the WS Hosts and we will try to help.</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- STAFF -->
+    <!-- About -->
     <section class="py-5 max-w-[85rem] mx-auto px-2">
       <div>
-      <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STAFF</h2>
-      <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">ABOUT</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+          <!-- Announcement Logo -->
+          <div class="flex justify-center mb-5">
+            <img src="images/logo-announcement.jpg" alt="Logo" class="max-h-[216px] md:h-[216px] w-auto rounded-lg" />
+          </div>
+          <p class="text-[1.5rem] font-semibold text-orange-300">Greetings, Generals...</p>
+          <p>We are very excited to announce that the <strong>World Series 2025</strong> is <strong>COMING SOON!</strong></p>
+          <p>This will take place in <strong>September 2025</strong>, with multiple qualification events throughout the year.</p>
+          <p>Qualification will be through the ZHLADDER and Revora.</p>
+          <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed tracking-wide mt-4">
+            <li>
+              <strong>World Series</strong> is the biggest and most important <strong>Generals Zero Hour</strong> event of the year.
+            </li>
+            <li>
+              This tournament brings together the strongest players from around the world.
+            </li>
+            <li>
+              The most exciting and high-level games from top professionals.
+            </li>
+            <li>
+              The largest prize pool.
+            </li>
+            <li>
+              High-quality streams from the best streamers. All matches will be streamed.
+            </li>
+            <li>
+              This is the event everyone has been waiting for. You may skip other tournaments, but this one is unmissable. The entire Generals Zero Hour community comes together here - Players, Organizers, Referees, Streamers, Viewers, and of course, Sponsors.
+            </li>
+            <li>
+              Each of us plays a significant role in the growth of our beloved game.
+              There's not much time left - very soon, we will find out the name of the best player in the world for 2025 year!
+            </li>
+            <li class="text-orange-300">
+              Qualification month starts in August.
+            </li>
+            <li class="text-orange-300">
+              Main event starts in September.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Format -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">FORMAT</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+          <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
+            <li>
+              <span class="font-semibold text-orange-300">64 players</span> – Single Elimination
+            </li>
+            <li>
+              Mode: 1v1, Start cash: $10000, SW Limit: NO
+            </li>
+            <li>
+              Games are <span class="font-semibold text-orange-300">Random Reverse</span>, but both players can agree to matchups.  
+              If no agreement is possible, random reverse applies.  
+              <span class="text-red-400 font-semibold">Air vs any other USA than Air = Auto Veto</span>.  
+              Deciding mirrors when score is even. Any mirrors in the end will be reversed.
+            </li>
+            <li>
+              <span class="font-semibold text-orange-300">Gentool v8.9</span> is mandatory. Upload mode must be on!
+            </li>
+            <li>
+              <span class="font-semibold">1/32:</span> Best of 9 – Decider: <span class="text-orange-300">Laser mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Arctic Arena ZH v1</span>
+            </li>
+            <li>
+              <span class="font-semibold">1/16:</span> Best of 11 – Decider: <span class="text-orange-300">Tox mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
+            </li>
+            <li>
+              <span class="font-semibold">1/8:</span> Best of 11 – Decider: <span class="text-orange-300">Air mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Mountain Mayhem v2</span>
+            </li>
+            <li>
+              <span class="font-semibold">1/4:</span> Best of 13 – Decider: <span class="text-orange-300">China mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Sakura Forest II ZH v1</span>
+            </li>
+            <li>
+              <span class="font-semibold">Semifinals:</span> Best of 13 – Decider: <span class="text-orange-300">GLA mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Snowy Drought ZH v5</span>
+            </li>
+            <li>
+              <span class="font-semibold">3rd place:</span> Best of 15 – Decider: <span class="text-orange-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
+            </li>
+            <li>
+              <span class="font-semibold">FINAL:</span> Best of 15 – Decider: <span class="text-orange-300">Tank mirror</span> on <span class="bfont-semibold text-green-400">[RANK] Blue Hole ZH v1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maps -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">MAP POOL</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+          <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
+            <li>
+              <span class="text-green-400">[RANK] AKAs Magic ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Alfies Haven ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Arctic Arena ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Black Hell ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Blue Hole ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Dammed Korhal ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Drallim Desert ZH v2</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Farmlands of the Fallen ZH v1</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] Imminent Victory ZH v2</span>
+            </li>
+            <li>
+              <span class="text-green-400">[RANK] TD NobugsCars ZH v1</span>
+            </li>
+            <hr class="border-1 border-gray-700 shadow-xl !my-4">
+            <button class="inline-flex items-center gap-2 bg-orange-400 text-neutral-800 tracking-wide px-3 py-1 rounded-lg shadow hover:bg-orange-300 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              <a href="">Download Maps</a>
+            </button>
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTICIPANTS -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">PARTICIPANTS</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-2 sm:p-5 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.95rem] md:text-[1rem]">
+          <div> <!-- ALL POTS -->
+            <div class="mb-4">
+              <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1A</h2>
+              <ol class="space-y-1 text-orange-300">
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">1.</span>
+                    <img src="flags/denmark.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">BiG^SiZe</span>
+                    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span></span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>size1456</span>
+                      </div>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>size1456</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
+                      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
+                    </a>
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">2.</span>
+                    <img src="flags/litva.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">Fargo</span>
+                    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span></span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>fargo6040</span>
+                      </div>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>fargo6040</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
+                      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
+                    </a>
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">3.</span>
+                    <img src="flags/egypt.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">Marakar</span>
+                    <img src="images/master_badge.png" class="h-5 relative top-[1px]" />
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span></span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>marakar</span>
+                      </div>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>marakar</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
+                      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
+                    </a>
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+              </ol>
+            </div>
+
+            <div class="mb-4">
+              <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 1B</h2>
+              <ol class="space-y-1 text-orange-300">
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">4.</span>
+                    <img src="flags/iran.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">Lift-TruCK</span>
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span class="text-[0.85rem] sm:text-[0.875rem]">Winner BO1</span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>.lifttruck</span>
+                      </div>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>.lifttruck</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
+                      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
+                    </a>
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">5.</span>
+                    <img src="flags/syria.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">MoJo_JoJo</span>
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #6</span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>.mojo_jojo9</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>.mojo_jojo9</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+              </ol>
+            </div>
+
+            <div class="mb-4">
+              <h2 class="text-[1.1rem] sm:text-xl text-orange-400 mb-2">Pot 2</h2>
+              <ol class="space-y-1 text-orange-300">
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <!-- Ник -->
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">6.</span>
+                    <img src="flags/new_zealand.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">HerB</span>
+                    <img src="images/expert_badge.png" class="h-5 relative top-[1px]" />
+                  </div>
+
+                  <!-- Статус -->
+                  <div class="text-gray-300"></div>
+
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #8</span>
+
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>madherb_</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>madherb_</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+
+                <!-- PLAYER -->
+                <li class="grid grid-cols-1 sm:grid-cols-5 items-center bg-[#323232] py-1.5 px-3 rounded gap-1 sm:gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="text-gray-400">7.</span>
+                    <img src="flags/russia.png" class="w-[21px] sm:w-[25px]" />
+                    <span class="text-orange-300">StaZzz</span>
+                  </div>
+                  <div class="text-gray-300"></div>
+                  <!-- Qual + Discord + YouTube на одной строке (на мобилке) -->
+                  <div class="flex justify-between items-center w-full sm:block text-gray-300">
+                    <span class="text-[0.85rem] sm:text-[0.875rem]">ZHLADDER #9</span>
+                    <!-- Только на мобилке -->
+                    <div class="flex items-center gap-3 sm:hidden text-gray-400">
+                      <div class="flex items-center gap-1">
+                        <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                        <span>.stazzz</span>
+                      </div>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube-48.png" class="w-6" alt="YouTube" />
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Только на десктопе -->
+                  <div class="hidden sm:flex items-center gap-1 text-gray-400">
+                    <img src="images/discord-48.png" class="h-5" alt="Discord" />
+                    <span>.stazzz</span>
+                  </div>
+                  <div class="hidden sm:flex items-center">
+                    <a href="https://www.youtube.com/" target="_blank" class="flex items-center">
+                      <img src="images/youtube-48.png" class="w-6 h-6" alt="YouTube" />
+                    </a>
+                  </div>
+                </li>
+                <!-- PLAYER END -->
+              </ol>
+            </div>
+          </div> <!-- ALL POTS -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEADLINES -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">DEADLINES</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.8rem] md:text-[1rem]">
+          <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
+            <li>
+              8 September: End of signups.
+            </li>
+            <li>
+              10 September: Live draw of the bracket
+            </li>
+            <li>
+              11 September: Prediction competition (no matches allowed before this deadline)
+            </li>
+            <li>
+              21 September: Deadline for Round 1
+            </li>
+            <li>
+              28 September: Deadline for Round 2
+            </li>
+            <li>
+              5 October: Deadline for Round 3
+            </li>
+            <li>
+              12 October: Deadline for the Quarterfinals
+            </li>
+            <li>
+              19 October: Deadline for the Semifinals
+            </li>
+            <li>
+              25 October: Deadline for the Grand Final and 3rd place match (please note: the match for 3rd place has to be scheduled before the final)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Streaming Guidlines -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STREAMING GUIDLINES</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
+
+        <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+          <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
+            <li>
+              <p>Here are some basic guidelines for the World Series 2024. Every streamer has to set up a stream delay of at least 2 minutes up to a maximum of 5 minutes if the players request it before Stream start. You can do more but 2 minutes should be more than enough to avoid any kind of stream sniping accusations.</p>
+              <p>Players are encouraged to check the stream delay with the streamer before the set.</p>
+            </li>
+            <li>
+              It is not allowed to "reserve" several sets in advance. Feel free to message both players, ask them if you can stream and if it matches with their and your time post it into the WS topic and the following Stream Box. Every streamer can add his available timezones when "signing up" for GameReplays.org streams. You can of course stream as much games as you want in the earlier rounds. Replay casts are also very appreciated.
+              <p>For later rounds we as the WS Hosts will decide who can stream which set ( this will be based on connection, origin of the players, streaming efforts of streamers etc. ).</p>
+            </li>
+            <li>
+              If you provide good coverage early on you will most likely end up getting bigger sets in the World Series later. Someone who streams one single set and then asks for a quarterfinal will most likely not have any kind of luck.
+              <p>While you are streaming you are the referee if noone else is around. This means be familiar with the WS rules ( AUTO REMATCH when Air vs any other USA) and the maps and map names. If you use a wrong map and players don't complain directly the set has to be played further. In case you have any issues with the players or any major issue regarding accusations, discussions etc. DM one of the WS Hosts and we will try to help.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAFF -->
+    <section class="py-5 max-w-[85rem] mx-auto px-2">
+      <div>
+        <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">STAFF</h2>
+        <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
         <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
           <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
@@ -593,63 +584,58 @@
       </div>
     </section>
 
-</main>
+  </main>
 
-  <!-- Footer -->
-<footer class="bg-gray-800 text-gray-300 py-4" style="background-color: #1f181f;">
-  <div class="max-w-4xl mx-auto px-4 text-center text-sm">
-  <div class="mb-2 px-8 text-gray-300">
-    &copy; 2025 ZH WORLD SERIES.
-  </div>
-
-  <div class="flex items-center justify-center gap-12">
-    <!-- CONTACT -->
-    <div class="flex items-center text-gray-300">
-      Contact:&nbsp;<img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
-      sonic066
-    </div>
-
-    <!-- SUPPORT + DONATE -->
-    <div class="flex items-center text-gray-300">
-      Support:&nbsp;
-      <button onclick="toggleDonate()" class="flex items-center text-gray-200 hover:text-green-500 transition-colors duration-300">
-        <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
-        Donate
-      </button>
-    </div>
-  </div>
-</div>
-
-  <!-- DONATE MODAL -->
-  <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-gray-900 p-6 rounded-lg text-white w-[90%] max-w-sm text-center shadow-xl">
-      <h2 class="text-xl font-semibold mb-4">Support in USDT (TRC-20)</h2>
-      <p class="text-gray-300 mb-2">Send to this wallet:</p>
-      <div class="bg-gray-800 text-green-400 font-mono text-[0.9rem] p-3 rounded mb-3 break-all" id="walletAddress">
-        TApfuj5hJDjjFqt1MXV6A7JGzoG2gwyw4K
+<!-- Footer -->
+  <footer class="text-gray-300 py-4" style="background-color: #1f181f;">
+    <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+      <div class="mb-2 px-8 text-gray-300">
+        &copy; 2025 ZH WORLD SERIES.
       </div>
-      <div class="copy-wrapper">
-        <button id="copyBtn" onclick="copyAddress()" class="bg-green-500 text-black px-2 py-1 rounded hover:bg-green-400 text-[0.9rem] inline-flex items-center">
-        Copy Address
-        </button>
+      <div class="flex items-center justify-center gap-12">
+        <!-- CONTACT -->
+        <div class="flex items-center text-gray-300">
+          Contact:&nbsp;<img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
+          sonic066
+        </div>
+        <!-- SUPPORT + DONATE -->
+        <div class="flex items-center text-gray-300">
+          Support:&nbsp;
+          <button onclick="toggleDonate()" class="flex items-center text-gray-200 hover:text-green-500 transition-colors duration-300">
+            <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
+            Donate
+          </button>
+        </div>
       </div>
-
-      
-      <br>
-      <button onclick="toggleDonate()" class="text-sm text-gray-400 hover:text-white mt-2">Close</button>
     </div>
-  </div>
-</footer>
+    
+    <!-- DONATE MODAL -->
+    <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-gray-900 p-6 rounded-lg text-white w-[90%] max-w-sm text-center shadow-xl">
+        <h2 class="text-xl font-semibold mb-4">Support in USDT (TRC-20)</h2>
+        <p class="text-gray-300 mb-2">Send to this wallet:</p>
+        <div class="bg-gray-800 text-green-400 font-mono text-[0.9rem] p-3 rounded mb-3 break-all" id="walletAddress">
+          TApfuj5hJDjjFqt1MXV6A7JGzoG2gwyw4K
+        </div>
+        <div class="copy-wrapper">
+          <button id="copyBtn" onclick="copyAddress()" class="bg-green-500 text-black px-2 py-1 rounded hover:bg-green-400 text-[0.9rem] inline-flex items-center">
+            Copy Address
+          </button>
+        </div>
+        <br>
+        <button onclick="toggleDonate()" class="text-sm text-gray-400 hover:text-white mt-2">Close</button>
+      </div>
+    </div>
+  </footer>
 
-<button id="scrollToTopBtn" title="Back to top"
-  class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-opacity duration-300 hidden shadow-lg">
-  <!-- стрелка вверх -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-  </svg>
-</button>
-
+  <button id="scrollToTopBtn" title="Back to top"
+    class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-opacity duration-300 hidden shadow-lg">
+    <!-- стрелка вверх -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
 
 </body>
 </html>

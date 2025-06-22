@@ -14,278 +14,274 @@
 
   <!-- Header -->
   <header class="shadow-md top-0 z-50 shadow-red-500/40" style="background-color: #1f181f;">
-  <div class="flex items-center w-full h-[128px]">
-  <img src="ws2025.jpg" alt="Logo" class="sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
+    <div class="flex items-center w-full h-[128px]">
+      <img src="ws2025.jpg" alt="Logo" class="sm:h-[80px] md:h-[128px] w-[280px] sm:w-[320px] md:w-[420px] object-contain min-w-0 max-w-full">
 
-    <!-- Gamburger menu for mobile -->
-    <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
-      </svg>
-    </button>
+      <!-- Gamburger menu for mobile -->
+      <button id="menu-toggle" class="ml-auto block md:hidden text-gray-100 focus:outline-none flex-shrink-0" aria-label="Toggle menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
 
-    <!-- Main menu (hidden on mobiles) -->
-    <nav id="menu" class="hidden md:flex flex-wrap gap-x-2 gap-y-2 justify-center space-x-6 lg:space-x-12 text-[0.95rem] lg:text-lg font-semibold mx-auto text-gray-100 pl-4">
-      <a href="index.html" class="hover:text-orange-300 transition-colors duration-200">MAIN INFO</a>
-      <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">QUALIFICATION</a>
-      <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
-      <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
-      <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
-      <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
-      <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
+      <!-- Main menu (hidden on mobiles) -->
+      <nav id="menu" class="hidden md:flex flex-wrap gap-x-2 gap-y-2 justify-center space-x-6 lg:space-x-12 text-[0.95rem] lg:text-lg font-semibold mx-auto text-gray-100 pl-4">
+        <a href="index.html" class="hover:text-orange-300 transition-colors duration-200">MAIN INFO</a>
+        <a href="qualification.html" class="hover:text-orange-300 transition-colors duration-200 text-orange-400 font-semibold">QUALIFICATION</a>
+        <a href="streambox.html" class="hover:text-orange-300 transition-colors duration-200">STREAM BOX</a>
+        <a href="bracket.html" class="hover:text-orange-300 transition-colors duration-200">BRACKET</a>
+        <a href="streamers.html" class="hover:text-orange-300 transition-colors duration-200">STREAMERS</a>
+        <a href="sponsors.html" class="hover:text-orange-300 transition-colors duration-200">SPONSORS</a>
+        <a href="hof.html" class="hover:text-orange-300 transition-colors duration-200">HALL OF FAME</a>
+      </nav>
+    </div>
+
+    <!-- Mobile version -->
+    <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
+      <a href="index.html" class="block text-gray-100 hover:text-orange-300">MAIN INFO</a>
+      <a href="qualification.html" class="block text-orange-400 hover:text-orange-300 font-semibold">QUALIFICATION</a>
+      <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
+      <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
+      <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
+      <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
+      <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
     </nav>
-  </div>
-
-  <!-- Mobile version -->
-  <nav id="mobile-menu" class="md:hidden bg-[#1f181f] hidden flex-col space-y-3 px-4 pb-4">
-    <a href="index.html" class="block text-gray-100 hover:text-orange-300">MAIN INFO</a>
-    <a href="qualification.html" class="block text-orange-400 hover:text-orange-300 font-semibold">QUALIFICATION</a>
-    <a href="streambox.html" class="block text-gray-100 hover:text-orange-300">STREAM BOX</a>
-    <a href="bracket.html" class="block text-gray-100 hover:text-orange-300">BRACKET</a>
-    <a href="streamers.html" class="block text-gray-100 hover:text-orange-300">STREAMERS</a>
-    <a href="sponsors.html" class="block text-gray-100 hover:text-orange-300">SPONSORS</a>
-    <a href="hof.html" class="block text-gray-100 hover:text-orange-300">HALL OF FAME</a>
-  </nav>
-</header>
+  </header>
 
 <main class="flex-grow bg-gray-950 max-w-[90rem] mx-auto w-full text-gray-200 shadow-2xl shadow-emerald-600">
-<!-- Countdown Timer -->
-<section class="bg-gray-950 text-orange-400 py-1">
-  <div class="max-w-3xl mx-auto px-4 text-center text-[1.48rem] md:text-[3rem]">
-    <h2 class="md:text-2xl mb-0">QUALIFICATION FOR THE WORLD SERIES 2025 STARTS IN:</h2>
-    <div id="countdown" class="flex justify-center gap-10 text-2xl md:text-4xl font-semibold">
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="days"></div>
-        <span class="text-sm mt-1 text-gray-300">Days</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="hours"></div>
-        <span class="text-sm mt-1 text-gray-300">Hours</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="minutes"></div>
-        <span class="text-sm mt-1 text-gray-300">Minutes</span>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="odometer" id="seconds"></div>
-        <span class="text-sm mt-1 text-gray-300">Seconds</span>
+  <!-- Countdown Timer -->
+  <section class="bg-gray-950 text-orange-400 py-1">
+    <div class="max-w-3xl mx-auto px-4 text-center text-[1.48rem] md:text-[3rem]">
+      <h2 class="md:text-2xl mb-0">QUALIFICATION FOR THE WORLD SERIES 2025 STARTS IN:</h2>
+      <div id="countdown" class="flex justify-center gap-10 text-2xl md:text-4xl font-semibold">
+        <div class="flex flex-col items-center">
+          <div class="odometer" id="days"></div>
+          <span class="text-sm mt-1 text-gray-300">Days</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="odometer" id="hours"></div>
+          <span class="text-sm mt-1 text-gray-300">Hours</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="odometer" id="minutes"></div>
+          <span class="text-sm mt-1 text-gray-300">Minutes</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="odometer" id="seconds"></div>
+          <span class="text-sm mt-1 text-gray-300">Seconds</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- SEEDING DETAILS -->
   <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
+    <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">SEEDING DETAILS</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-      <!-- Логотип -->
-    <div class="flex justify-center mb-5">
-      <img src="images/logo-qualification.jpg" alt="Qualification Logo" class="max-h-[216px] md:h-[216px] w-auto rounded-lg object-contain" />
-    </div>
-      <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
-        <p>With 6 months until the world series begins, we want to share details on how to qualify, and what it means.</p>
-        <p>This is going to be the biggest 1v1 10k tournament of the year.</p>
-        <p>We're going to have 4 pots, with a total of 64 players.</p>
-        <p>Most qualification comes through ZHLADDER again this year and can be accessed<a href="https://discord.gg/5J9f6KWDqs" target="_blank" class="inline-flex items-center gap-1 ml-1 text-blue-400 hover:text-blue-500 relative top-[4px]"><img src="images/discord-48.png" alt="Discord" class="w-5 h-5 relative top-[1px]" />Here</a>, but we're still looking for Revora players too!</p>
+      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+        <!-- Qual Logo -->
+        <div class="flex justify-center mb-5">
+          <img src="images/logo-qualification.jpg" alt="Qualification Logo" class="max-h-[216px] md:h-[216px] w-auto rounded-lg object-contain" />
+        </div>
+        <ul class="list-disc list-outside ml-3 text-gray-200 leading-relaxed">
+          <p>With 6 months until the world series begins, we want to share details on how to qualify, and what it means.</p>
+          <p>This is going to be the biggest 1v1 10k tournament of the year.</p>
+          <p>We're going to have 4 pots, with a total of 64 players.</p>
+          <p>Most qualification comes through ZHLADDER again this year and can be accessed<a href="https://discord.gg/5J9f6KWDqs" target="_blank" class="inline-flex items-center gap-1 ml-1 text-blue-400 hover:text-blue-500 relative top-[4px]"><img src="images/discord-48.png" alt="Discord" class="w-5 h-5 relative top-[1px]" />Here</a>, but we're still looking for Revora players too!</p>
 
-        <hr class="border-1 border-gray-700 shadow-xl !my-4">
-        <h3 class="font-semibold text-orange-400">Qualification month for ZHLADDER and Revora will be from 1st August 2025 and run until August 31st 2025.</h3>
-        <p>Excitingly, we will have 3 tournaments to get higher pot qualification:</p>
-        <li><a href="https://www.gamereplays.org/community/index.php?showtopic=1079762" target="_blank" class="text-blue-400 hover:text-blue-500">King of BO1 Tournament #1 - 18th April 2025 Open to all players. </a>Status: Completed. Winner: <span class="text-orange-300">BoYcaH^</span></li>
-        <li><a href="https://www.gamereplays.org/community/index.php?showtopic=1080313" target="_blank" class="text-blue-400 hover:text-blue-500">King of BO1 Tournament #2 - 15th June 2025 Open to all players. </a>Status: Completed. Winner: <span class="text-orange-300">NINJA</span></li>
-        <li>Expert + PRO 10k RR Tournament - Date TBD - Open for PRO and Experts only (16 players max)</li>
-        <hr class="border-1 border-gray-700 shadow-xl !my-4">
-    <h3 class="font-semibold text-orange-400 mb-1">Pot 1: 8 Players</h3>
-<ol class="list-decimal list-inside leading-snug font-normal">
-  <li>Master #1</li>
-  <li>Master #2</li>
-  <li>Master #3</li>
-  <li>Master #4</li>
-  <li>Master #5</li>
-  <li>Expert + PRO 10k RR Tournament - Winner</li>
-  <li>ZHLADDER #1</li>
-  <li>ZHLADDER #2</li>
-  <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 2: 8 Players</h3>
-  <li>King of BO1 Tournament #1 - Winner</li>
-  <li>King of BO1 Tournament #2 - Winner</li>
-  <li>ZHLADDER #3</li>
-  <li>ZHLADDER #4</li>
-  <li>ZHLADDER #5</li>
-  <li>ZHLADDER #6</li>
-  <li>ZHLADDER #7</li>
-  <li>Shatabrick #1</li>
-  <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 3: 16 Players</h3>
-  <li>ZHLADDER #8</li>
-  <li>ZHLADDER #9</li>
-  <li>ZHLADDER #10</li>
-  <li>ZHLADDER #11</li>
-  <li>ZHLADDER #12</li>
-  <li>ZHLADDER #13</li>
-  <li>ZHLADDER #14</li>
-  <li>Expert #1</li>
-  <li>Expert #2</li>
-  <li>Expert #3</li>
-  <li>Expert #4</li>
-  <li>Expert #5</li>
-  <li>Expert #6</li>
-  <li>Shatabrick #2</li>
-  <li>Shatabrick #3</li>
-  <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 4: 32 Players</h3>
-  <li>ZHLADDER #15</li>
-  <li>ZHLADDER #16</li>
-  <li>ZHLADDER #17</li>
-  <li>ZHLADDER #18</li>
-  <li>ZHLADDER #19</li>
-  <li>ZHLADDER #20</li>
-  <li>ZHLADDER #21</li>
-  <li>ZHLADDER #22</li>
-  <li>ZHLADDER #23</li>
-  <li>ZHLADDER #24</li>
-  <li>ZHLADDER #25</li>
-  <li>ZHLADDER #26</li>
-  <li>ZHLADDER #27</li>
-  <li>ZHLADDER #28</li>
-  <li>ZHLADDER #29</li>
-  <li>ZHLADDER #30</li>
-  <li>ZHLADDER #31</li>
-  <li>ZHLADDER #32</li>
-  <li>ZHLADDER #33</li>
-  <li>ZHLADDER #34</li>
-  <li>ZHLADDER #35</li>
-  <li>ZHLADDER #36</li>
-  <li>ZHLADDER #37</li>
-  <li>ZHLADDER #38</li>
-  <li>ZHLADDER #39</li>
-  <li>ZHLADDER #40</li>
-  <li>ZHLADDER #41</li>
-  <li>ZHLADDER #42</li>
-  <li>ZHLADDER #43</li>
-  <li>ZHLADDER #44</li>
-  <li>ZHLADDER #45</li>
-  <li>Shatabrick #4</li>
-  <li>Shatabrick #5</li>
-</ol>
-<hr class="border-1 border-gray-700 shadow-xl !my-4">
-<p class="italic mb-3">The 6 expert ladder spots will be increased if more experts want to play. If there are not 6 experts, we will move the lower spots up accordingly. If any expert is ranked higher on ZHLadder, they will also take that corresponding spot.</p>
-<p class="italic">Pot 1, 2, and 3 will face Pot 4 in the first round and then it's up to you guys to give us some upsets!</p>
-      </ul>
+          <hr class="border-1 border-gray-700 shadow-xl !my-4">
+          <h3 class="font-semibold text-orange-400">Qualification month for ZHLADDER and Revora will be from 1st August 2025 and run until August 31st 2025.</h3>
+          <p>Excitingly, we will have 3 tournaments to get higher pot qualification:</p>
+          <li><a href="https://www.gamereplays.org/community/index.php?showtopic=1079762" target="_blank" class="text-blue-400 hover:text-blue-500">King of BO1 Tournament #1 - 18th April 2025 Open to all players. </a>Status: Completed. Winner: <span class="text-orange-300">BoYcaH^</span></li>
+          <li><a href="https://www.gamereplays.org/community/index.php?showtopic=1080313" target="_blank" class="text-blue-400 hover:text-blue-500">King of BO1 Tournament #2 - 15th June 2025 Open to all players. </a>Status: Completed. Winner: <span class="text-orange-300">NINJA</span></li>
+          <li>Expert + PRO 10k RR Tournament - Date TBD - Open for PRO and Experts only (16 players max)</li>
+          <hr class="border-1 border-gray-700 shadow-xl !my-4">
+          <h3 class="font-semibold text-orange-400 mb-1">Pot 1: 8 Players</h3>
+          <ol class="list-decimal list-inside leading-snug font-normal">
+            <li>Master #1</li>
+            <li>Master #2</li>
+            <li>Master #3</li>
+            <li>Master #4</li>
+            <li>Master #5</li>
+            <li>Expert + PRO 10k RR Tournament - Winner</li>
+            <li>ZHLADDER #1</li>
+            <li>ZHLADDER #2</li>
+            <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 2: 8 Players</h3>
+            <li>King of BO1 Tournament #1 - Winner</li>
+            <li>King of BO1 Tournament #2 - Winner</li>
+            <li>ZHLADDER #3</li>
+            <li>ZHLADDER #4</li>
+            <li>ZHLADDER #5</li>
+            <li>ZHLADDER #6</li>
+            <li>ZHLADDER #7</li>
+            <li>Shatabrick #1</li>
+            <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 3: 16 Players</h3>
+            <li>ZHLADDER #8</li>
+            <li>ZHLADDER #9</li>
+            <li>ZHLADDER #10</li>
+            <li>ZHLADDER #11</li>
+            <li>ZHLADDER #12</li>
+            <li>ZHLADDER #13</li>
+            <li>ZHLADDER #14</li>
+            <li>Expert #1</li>
+            <li>Expert #2</li>
+            <li>Expert #3</li>
+            <li>Expert #4</li>
+            <li>Expert #5</li>
+            <li>Expert #6</li>
+            <li>Shatabrick #2</li>
+            <li>Shatabrick #3</li>
+            <h3 class="font-semibold text-orange-400 mb-1 mt-4">Pot 4: 32 Players</h3>
+            <li>ZHLADDER #15</li>
+            <li>ZHLADDER #16</li>
+            <li>ZHLADDER #17</li>
+            <li>ZHLADDER #18</li>
+            <li>ZHLADDER #19</li>
+            <li>ZHLADDER #20</li>
+            <li>ZHLADDER #21</li>
+            <li>ZHLADDER #22</li>
+            <li>ZHLADDER #23</li>
+            <li>ZHLADDER #24</li>
+            <li>ZHLADDER #25</li>
+            <li>ZHLADDER #26</li>
+            <li>ZHLADDER #27</li>
+            <li>ZHLADDER #28</li>
+            <li>ZHLADDER #29</li>
+            <li>ZHLADDER #30</li>
+            <li>ZHLADDER #31</li>
+            <li>ZHLADDER #32</li>
+            <li>ZHLADDER #33</li>
+            <li>ZHLADDER #34</li>
+            <li>ZHLADDER #35</li>
+            <li>ZHLADDER #36</li>
+            <li>ZHLADDER #37</li>
+            <li>ZHLADDER #38</li>
+            <li>ZHLADDER #39</li>
+            <li>ZHLADDER #40</li>
+            <li>ZHLADDER #41</li>
+            <li>ZHLADDER #42</li>
+            <li>ZHLADDER #43</li>
+            <li>ZHLADDER #44</li>
+            <li>ZHLADDER #45</li>
+            <li>Shatabrick #4</li>
+            <li>Shatabrick #5</li>
+          </ol>
+          <hr class="border-1 border-gray-700 shadow-xl !my-4">
+          <p class="italic mb-3">The 6 expert ladder spots will be increased if more experts want to play. If there are not 6 experts, we will move the lower spots up accordingly. If any expert is ranked higher on ZHLadder, they will also take that corresponding spot.</p>
+          <p class="italic">Pot 1, 2, and 3 will face Pot 4 in the first round and then it's up to you guys to give us some upsets!</p>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <!-- ZHLADDER -->
   <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
+    <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">ZHLADDER</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem] text-gray-200 leading-relaxed">
+      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem] text-gray-200 leading-relaxed">
 
-      <p>ZHLADDER is one of the most commonly used places to find 1v1 and 2v2 ranked games.</p>
-      <p>They are using the ELO rating system with some improvements based on the win rates of the armies in the Generals Zero Hour.</p>
-      <p>These have a ranked format where each player has a rating based on who they play, whether they win, and with which armies they win.</p>
-      <p>You must register in the server with a username and then play games to get a rank! If you lose, you must report it in the server with the name of the opponent and the armies each player had.</p>
-      <p>Qualification will use the monthly leaderboard found on the Discord. If you have any questions on this, feel free to reach out to <strong class="italic">GameReplays staff</strong>, or <a href="https://www.gamereplays.org/community/index.php?showuser=207653" target="_blank" class="text-blue-400 hover:text-blue-500"><strong class="italic">Sonic.</strong></a></p>
-      <p>A brief VIDEO tutorial on how to play on ZHLADDER can be found below:</p>
-      <ul class="list-disc ml-4">If you're too lazy to watch the video but want to start playing on the ZHLADDER, here's all you need to do:
-        <li>1. Join the <a href="https://discord.gg/5J9f6KWDqs" target="_blank" class="text-blue-400 hover:text-blue-500 pr-1">Discord server</a>if you’re not there yet.</li>
-        <li>2. Register using the /reg command in any 1v1 lobby channel.</li>
-        <li>3. Find an opponent you'd like to play a ladder game with.</li>
-        <li>4. After the match, if you lost, report your loss using the /m command.</li>
-        </ul>
-      <p>If you have any questions, check the "Info" channel or ask members in the lobby - they'll help you.</p>
-      <div class="aspect-video mt-8">
-        <iframe class="w-full h-full border-none" src="https://www.youtube.com/embed/ZU4KHui_lXI" title="YouTube video" allowfullscreen></iframe>
+        <p>ZHLADDER is one of the most commonly used places to find 1v1 and 2v2 ranked games.</p>
+        <p>They are using the ELO rating system with some improvements based on the win rates of the armies in the Generals Zero Hour.</p>
+        <p>These have a ranked format where each player has a rating based on who they play, whether they win, and with which armies they win.</p>
+        <p>You must register in the server with a username and then play games to get a rank! If you lose, you must report it in the server with the name of the opponent and the armies each player had.</p>
+        <p>Qualification will use the monthly leaderboard found on the Discord. If you have any questions on this, feel free to reach out to <strong class="italic">GameReplays staff</strong>, or <a href="https://www.gamereplays.org/community/index.php?showuser=207653" target="_blank" class="text-blue-400 hover:text-blue-500"><strong class="italic">Sonic.</strong></a></p>
+        <p>A brief VIDEO tutorial on how to play on ZHLADDER can be found below:</p>
+        <ul class="list-disc ml-4">If you're too lazy to watch the video but want to start playing on the ZHLADDER, here's all you need to do:
+          <li>1. Join the <a href="https://discord.gg/5J9f6KWDqs" target="_blank" class="text-blue-400 hover:text-blue-500 pr-1">Discord server</a>if you’re not there yet.</li>
+          <li>2. Register using the /reg command in any 1v1 lobby channel.</li>
+          <li>3. Find an opponent you'd like to play a ladder game with.</li>
+          <li>4. After the match, if you lost, report your loss using the /m command.</li>
+          </ul>
+        <p>If you have any questions, check the "Info" channel or ask members in the lobby - they'll help you.</p>
+        <div class="aspect-video mt-8">
+          <iframe class="w-full h-full border-none" src="https://www.youtube.com/embed/ZU4KHui_lXI" title="YouTube video" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-  </div>
 </section>
 
 
 <!-- CNCONLINE -->
   <section class="py-5 max-w-[85rem] mx-auto px-2">
-  <div>
+    <div>
       <h2 class="text-[1.25rem] md:text-2xl text-center text-orange-400 mb-1 tracking-wide">CNC: ONLINE</h2>
       <div class="w-12 h-[3px] mx-auto bg-orange-400 rounded-full mb-2"></div>
 
-    <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
-    
-      <p>If you prefer to play via <strong>Cnconline</strong> or how it is called: <a href="https://cnc-online.net/de/" target="_blank" class="text-blue-400 hover:text-blue-500">Cnconline</a> you can do that as well.</p>
-      <p>CNC-online is a server where you can find several games like 1 vs 1 etc.</p>
-      <p>All you have to do is to log in and play.</p>
-      <p>If you need help with accessing cnc-online you can always rely on Legionnaire:</p>
-      <p>Play some games and you will receive points for won games and lose points for losing games.</p>
-      <p>The top 5 players of "<strong>Shatabrick</strong>" will have a save seed in the <strong>World Series</strong>. You can check the ladder <a href="http://www.shatabrick.com/cco/zh/index.php?g=zh&a=1" target="_blank" class="text-blue-400 hover:text-blue-500">here</a>.</p>
-      <p>If you start your game all you have to do is log in and click on Online-> Multiplayer</p>
-      <div class="aspect-video mt-8">
-        <iframe class="w-full h-full border-none" src="https://www.youtube.com/embed/JhCmfaAy2d0" title="YouTube video" allowfullscreen></iframe>
+      <div class="bg-neutral-800 border-2 border-gray-700 shadow-xl rounded-xl p-3 md:p-6 shadow-red-900/20 font-light md:font-normal text-[0.85rem] md:text-[1rem]">
+      
+        <p>If you prefer to play via <strong>Cnconline</strong> or how it is called: <a href="https://cnc-online.net/de/" target="_blank" class="text-blue-400 hover:text-blue-500">Cnconline</a> you can do that as well.</p>
+        <p>CNC-online is a server where you can find several games like 1 vs 1 etc.</p>
+        <p>All you have to do is to log in and play.</p>
+        <p>If you need help with accessing cnc-online you can always rely on Legionnaire:</p>
+        <p>Play some games and you will receive points for won games and lose points for losing games.</p>
+        <p>The top 5 players of "<strong>Shatabrick</strong>" will have a save seed in the <strong>World Series</strong>. You can check the ladder <a href="http://www.shatabrick.com/cco/zh/index.php?g=zh&a=1" target="_blank" class="text-blue-400 hover:text-blue-500">here</a>.</p>
+        <p>If you start your game all you have to do is log in and click on Online-> Multiplayer</p>
+        <div class="aspect-video mt-8">
+          <iframe class="w-full h-full border-none" src="https://www.youtube.com/embed/JhCmfaAy2d0" title="YouTube video" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 </main>
 
   <!-- Footer -->
-<footer class="bg-gray-800 text-gray-300 py-4" style="background-color: #1f181f;">
-  <div class="max-w-4xl mx-auto px-4 text-center text-sm">
-  <div class="mb-2 px-8 text-gray-300">
-    &copy; 2025 ZH WORLD SERIES.
-  </div>
-
-  <div class="flex items-center justify-center gap-12">
-    <!-- CONTACT -->
-    <div class="flex items-center text-gray-300">
-      Contact:&nbsp;<img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
-      sonic066
-    </div>
-
-    <!-- SUPPORT + DONATE -->
-    <div class="flex items-center text-gray-300">
-      Support:&nbsp;
-      <button onclick="toggleDonate()" class="flex items-center text-gray-200 hover:text-green-500 transition-colors duration-300">
-        <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
-        Donate
-      </button>
-    </div>
-  </div>
-</div>
-
-  <!-- DONATE MODAL -->
-  <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-gray-900 p-6 rounded-lg text-white w-[90%] max-w-sm text-center shadow-xl">
-      <h2 class="text-xl font-semibold mb-4">Support in USDT (TRC-20)</h2>
-      <p class="text-gray-300 mb-2">Send to this wallet:</p>
-      <div class="bg-gray-800 text-green-400 font-mono text-[0.9rem] p-3 rounded mb-3 break-all" id="walletAddress">
-        TApfuj5hJDjjFqt1MXV6A7JGzoG2gwyw4K
+  <footer class="text-gray-300 py-4" style="background-color: #1f181f;">
+    <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+      <div class="mb-2 px-8 text-gray-300">
+        &copy; 2025 ZH WORLD SERIES.
       </div>
-      <div class="copy-wrapper">
-        <button id="copyBtn" onclick="copyAddress()" class="bg-green-500 text-black px-2 py-1 rounded hover:bg-green-400 text-[0.9rem] inline-flex items-center">
-        Copy Address
-        </button>
+      <div class="flex items-center justify-center gap-12">
+        <!-- CONTACT -->
+        <div class="flex items-center text-gray-300">
+          Contact:&nbsp;<img src="images/discord-48.png" alt="Discord" class="w-6 h-6 mr-1" />
+          sonic066
+        </div>
+        <!-- SUPPORT + DONATE -->
+        <div class="flex items-center text-gray-300">
+          Support:&nbsp;
+          <button onclick="toggleDonate()" class="flex items-center text-gray-200 hover:text-green-500 transition-colors duration-300">
+            <img src="images/tether-48.png" alt="USDT" class="w-6 h-6 mr-1" />
+            Donate
+          </button>
+        </div>
       </div>
-
-
-      <br>
-      <button onclick="toggleDonate()" class="text-sm text-gray-400 hover:text-white mt-2">Close</button>
     </div>
-  </div>
-</footer>
+    
+    <!-- DONATE MODAL -->
+    <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-gray-900 p-6 rounded-lg text-white w-[90%] max-w-sm text-center shadow-xl">
+        <h2 class="text-xl font-semibold mb-4">Support in USDT (TRC-20)</h2>
+        <p class="text-gray-300 mb-2">Send to this wallet:</p>
+        <div class="bg-gray-800 text-green-400 font-mono text-[0.9rem] p-3 rounded mb-3 break-all" id="walletAddress">
+          TApfuj5hJDjjFqt1MXV6A7JGzoG2gwyw4K
+        </div>
+        <div class="copy-wrapper">
+          <button id="copyBtn" onclick="copyAddress()" class="bg-green-500 text-black px-2 py-1 rounded hover:bg-green-400 text-[0.9rem] inline-flex items-center">
+            Copy Address
+          </button>
+        </div>
+        <br>
+        <button onclick="toggleDonate()" class="text-sm text-gray-400 hover:text-white mt-2">Close</button>
+      </div>
+    </div>
+  </footer>
 
-<button id="scrollToTopBtn" title="Back to top"
-  class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-opacity duration-300 hidden shadow-lg">
-  <!-- стрелка вверх -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-  </svg>
-</button>
+  <button id="scrollToTopBtn" title="Back to top"
+    class="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-opacity duration-300 hidden shadow-lg">
+    <!-- стрелка вверх -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
 
 </body>
 </html>
