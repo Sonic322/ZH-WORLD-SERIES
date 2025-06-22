@@ -7,13 +7,13 @@
 }
 
 body {
-  position: relative; /* чтобы z-index работал, если нужно */
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: #1f181f;
+  /position: relative; /* чтобы z-index работал, если нужно */
+  /background-image: url('images/background.jpg');
+  /background-size: cover;
+  /background-position: center;
+  /background-attachment: fixed;
+  /background-repeat: no-repeat;
+  background-color: #121212;
   /* z-index: не нужен */
 }
 
