@@ -13,10 +13,9 @@ body {
   /background-position: center;
   /background-attachment: fixed;
   /background-repeat: no-repeat;
-  background-color: #121212;
+  background-color: #030712;
   /* z-index: не нужен */
 }
-
 
   .odometer {
     display: flex;
