@@ -6,12 +6,25 @@
   overflow-y: scroll;
 }
 
+/* Preload background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('images/background.jpg') no-repeat center center/cover;
+  z-index: -50;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 body {
   background-image: url('images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  z-index: -50;
 }
 
 
