@@ -124,7 +124,7 @@ function filterStreamers(query) {
 }
 
 
-const API_KEY = 'AIzaSyAqLrnXgZ31rWgpgEESLXbtigo_D1T2lq0';
+const API_KEY = '';
 
 const streamers = [
   { name: 'DoMiNaToR', channelId: 'UCkoFrzmLq_bKtYi1aKHbhpQ', statusElementId: 'status-dominator', subsElementId: 'subs-dominator' },
